@@ -6,6 +6,8 @@ version: 2.3.0
 authors:
   - family-names: Li
     given-names: Qianyang
+  - family-names: Liu
+    given-names: Bingqing
   - family-names: Zhang
     given-names: Xingjun
   - family-names: Wang
@@ -20,6 +22,8 @@ preferred-citation:
   authors:
     - family-names: Li
       given-names: Qianyang
+    - family-names: Liu
+      given-names: Bingqing
     - family-names: Zhang
       given-names: Xingjun
     - family-names: Wang

@@ -285,7 +285,7 @@ python scripts/validate_gpu.py --device cuda:0 --out runs/verify_gpu
 | `docs/` | Methodology, protocols and output formats |
 | `metadata/` | Paper references and experiment correspondence |
 
-See [methodology](docs/methodology.md), [experiment protocols](docs/experiments.md), [GPU execution](docs/gpu.md) and [contributing](CONTRIBUTING.md).
+
 
 <!-- section: citation -->
 
@@ -293,4 +293,4 @@ See [methodology](docs/methodology.md), [experiment protocols](docs/experiments.
 
 Please cite **Sparse Competence Mining for Forecastability-Aware Expert Routing in Heterogeneous Time Series** when using this repository. Author and citation metadata are provided in [CITATION.cff](CITATION.cff).
 
-Licensing terms and third-party notices are provided in [LICENSE](LICENSE) and [THIRD_PARTY.md](THIRD_PARTY.md).
+

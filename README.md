@@ -2,8 +2,6 @@
 
 # FAME-SCM
 
-[English](README.md) | [简体中文](使用说明.md)
-
 Official implementation of **Sparse Competence Mining for Forecastability-Aware Expert Routing in Heterogeneous Time Series**.
 
 FAME-SCM learns forecastability-aware expert routing from sparsely acquired series–expert competence evidence. It combines training-time fingerprints, shared competence recovery, cost-aware active acquisition, teacher-guided sparse routing, and incremental expert insertion. The repository provides configurations and experiment entry points for the paper and supplementary analyses.

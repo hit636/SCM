@@ -1,0 +1,113 @@
+{
+  "kind": "synthetic_only",
+  "status": "passed",
+  "methods": 11,
+  "audit": {
+    "runs_checked": 11,
+    "common_targets": true,
+    "checks": [
+      {
+        "method": "fame_scm_active",
+        "mask": 0,
+        "seed": 0,
+        "prediction_records": 336,
+        "rmse": 2.637498123418552,
+        "status": "passed"
+      },
+      {
+        "method": "full_observation",
+        "mask": 0,
+        "seed": 0,
+        "prediction_records": 336,
+        "rmse": 2.5461852170779222,
+        "status": "passed"
+      },
+      {
+        "method": "imc",
+        "mask": 0,
+        "seed": 0,
+        "prediction_records": 336,
+        "rmse": 2.551987766304908,
+        "status": "passed"
+      },
+      {
+        "method": "independent_lgbm",
+        "mask": 0,
+        "seed": 0,
+        "prediction_records": 336,
+        "rmse": 2.5763084957655464,
+        "status": "passed"
+      },
+      {
+        "method": "independent_neural",
+        "mask": 0,
+        "seed": 0,
+        "prediction_records": 336,
+        "rmse": 2.560442627651693,
+        "status": "passed"
+      },
+      {
+        "method": "lightgbm",
+        "mask": 0,
+        "seed": 0,
+        "prediction_records": 336,
+        "rmse": 3.346790771935713,
+        "status": "passed"
+      },
+      {
+        "method": "nn_ei_c",
+        "mask": 0,
+        "seed": 0,
+        "prediction_records": 336,
+        "rmse": 2.5937522720197563,
+        "status": "passed"
+      },
+      {
+        "method": "pmf_a",
+        "mask": 0,
+        "seed": 0,
+        "prediction_records": 336,
+        "rmse": 2.644176089020716,
+        "status": "passed"
+      },
+      {
+        "method": "random_partial",
+        "mask": 0,
+        "seed": 0,
+        "prediction_records": 336,
+        "rmse": 2.578758115745018,
+        "status": "passed"
+      },
+      {
+        "method": "scm_passive",
+        "mask": 0,
+        "seed": 0,
+        "prediction_records": 336,
+        "rmse": 2.559313281924292,
+        "status": "passed"
+      },
+      {
+        "method": "softimpute",
+        "mask": 0,
+        "seed": 0,
+        "prediction_records": 336,
+        "rmse": 2.579577856180785,
+        "status": "passed"
+      }
+    ]
+  },
+  "consumers": 6,
+  "calibration_trials": 2,
+  "bootstrap_replicates": 10000,
+  "tables": {
+    "measured_runs": 18,
+    "files": [
+      "measured_runs.csv",
+      "measured_aggregate.csv",
+      "evidence_by_stage.csv"
+    ],
+    "aggregation": "Neural-seed means within masks; mean/SD across masks; cohorts, candidate counts, budgets and result kinds remain separate",
+    "scope": "Measured outputs only; paper reference targets are never read or copied"
+  },
+  "strict_protocol_match_and_mismatch": true
+}

@@ -1,0 +1,5 @@
+{
+  "status": "unavailable",
+  "device": "cuda:0",
+  "error": "CUDA was requested but is unavailable. Install a CUDA-enabled Torch wheel and check the NVIDIA driver/GPU visibility, or explicitly select --device cpu for a CPU run. No CPU fallback was performed."
+}

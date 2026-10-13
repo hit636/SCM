@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "einops": true,
+    "lightgbm": true,
+    "numpy": true,
+    "pandas": true,
+    "psutil": true,
+    "scipy": true,
+    "sklearn": true,
+    "statsmodels": true,
+    "torch": true,
+    "yaml": true
+  },
+  "import_errors": {},
+  "missing": [],
+  "status": "device_unavailable",
+  "device": {
+    "requested": "cuda:0",
+    "probe": "failed"
+  },
+  "device_error": "RuntimeError: CUDA was requested but is unavailable. Install a CUDA-enabled Torch wheel and check the NVIDIA driver/GPU visibility, or explicitly select --device cpu for a CPU run. No CPU fallback was performed.",
+  "data_path": "data/snbc/daily_sales_data.csv",
+  "data_exists": false,
+  "result_kind": "independent_reimplementation"
+}

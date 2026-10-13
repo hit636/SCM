@@ -1,0 +1,10 @@
+include README.md CONTRIBUTING.md LICENSE THIRD_PARTY.md requirements.txt CITATION.cff 使用说明.md run.py .gitignore
+include example_api.py
+recursive-include .github *.yml
+recursive-include configs *.yaml
+recursive-include docs *.md *.json
+recursive-include metadata *.json *.csv
+recursive-include scripts *.py *.sh
+recursive-include tests *.py
+recursive-include data *.md *.csv
+recursive-include fame_scm/vendor *.py LICENSE

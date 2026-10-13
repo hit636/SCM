@@ -1,0 +1,26 @@
+experts:
+  names:
+  - sarima
+  - tsb
+  - lightgbm
+  - dlinear
+  - timemixer
+  specs:
+    sarima:
+      kind: sarima
+      parameters: {}
+    tsb:
+      kind: tsb
+      parameters: {}
+    lightgbm:
+      kind: lightgbm
+      parameters: {}
+    dlinear:
+      kind: dlinear
+      parameters: {}
+    timemixer:
+      kind: timemixer
+      parameters: {}
+  chronos_model: amazon/chronos-t5-tiny
+  chronos_revision: 129a2d204d6ab4205a0049a160402deefaf161b2
+  manifest_origin: fixed repository expert configurations

@@ -1,0 +1,1018 @@
+{
+  "version": "2.3.0",
+  "scope": "GPU configuration and placement support; actual CUDA execution is unverified without hardware",
+  "project_installation_required": false,
+  "dependency_files": [
+    "requirements.txt"
+  ],
+  "main_device": "cuda:0",
+  "smoke_device": "cpu",
+  "unit_tests": {
+    "total": 91,
+    "passed": 90,
+    "skipped_real_cuda": 1
+  },
+  "readme_parity": {
+    "status": "passed",
+    "paired_sections": 14,
+    "identical_code_blocks": 12,
+    "bash_only": true,
+    "dependency_files": 1,
+    "project_install_required": false
+  },
+  "cpu_device_probe": {
+    "status": "ready",
+    "requested": "cpu",
+    "selected": "cpu",
+    "torch_version": "2.6.0+cpu",
+    "torch_cuda_build": null,
+    "cuda_available": false,
+    "visible_gpu_count": 0,
+    "gpu_name": null,
+    "gpu_total_memory_bytes": null,
+    "probe": "passed"
+  },
+  "cuda_device_probe": {
+    "status": "unavailable",
+    "device": "cuda:0",
+    "error": "CUDA was requested but is unavailable. Install a CUDA-enabled Torch wheel and check the NVIDIA driver/GPU visibility, or explicitly select --device cpu for a CPU run. No CPU fallback was performed."
+  },
+  "cpu_doctor": {
+    "dependencies": {
+      "einops": true,
+      "lightgbm": true,
+      "numpy": true,
+      "pandas": true,
+      "psutil": true,
+      "scipy": true,
+      "sklearn": true,
+      "statsmodels": true,
+      "torch": true,
+      "yaml": true
+    },
+    "import_errors": {},
+    "missing": [],
+    "status": "ready",
+    "device": {
+      "requested": "cpu",
+      "selected": "cpu",
+      "torch_version": "2.6.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "visible_gpu_count": 0,
+      "gpu_name": null,
+      "gpu_total_memory_bytes": null,
+      "probe": "passed"
+    },
+    "device_error": null,
+    "data_path": "data/snbc/daily_sales_data.csv",
+    "data_exists": false,
+    "result_kind": "independent_reimplementation"
+  },
+  "cuda_doctor": {
+    "dependencies": {
+      "einops": true,
+      "lightgbm": true,
+      "numpy": true,
+      "pandas": true,
+      "psutil": true,
+      "scipy": true,
+      "sklearn": true,
+      "statsmodels": true,
+      "torch": true,
+      "yaml": true
+    },
+    "import_errors": {},
+    "missing": [],
+    "status": "device_unavailable",
+    "device": {
+      "requested": "cuda:0",
+      "probe": "failed"
+    },
+    "device_error": "RuntimeError: CUDA was requested but is unavailable. Install a CUDA-enabled Torch wheel and check the NVIDIA driver/GPU visibility, or explicitly select --device cpu for a CPU run. No CPU fallback was performed.",
+    "data_path": "data/snbc/daily_sales_data.csv",
+    "data_exists": false,
+    "result_kind": "independent_reimplementation"
+  },
+  "real_cuda_execution": "not_run_no_GPU",
+  "gpu_validator_unavailable_exit": 1,
+  "gpu_validator_produces_no_pass_output_without_GPU": true,
+  "api": {
+    "kind": "synthetic_only",
+    "status": "passed",
+    "methods": 2,
+    "audit": {
+      "runs_checked": 2,
+      "common_targets": true,
+      "checks": [
+        {
+          "method": "fame_scm_active",
+          "mask": 0,
+          "seed": 0,
+          "prediction_records": 336,
+          "rmse": 3.2613113273263195,
+          "status": "passed"
+        },
+        {
+          "method": "lightgbm",
+          "mask": 0,
+          "seed": 0,
+          "prediction_records": 336,
+          "rmse": 3.8604182492046966,
+          "status": "passed"
+        }
+      ]
+    }
+  },
+  "core_integration": {
+    "kind": "synthetic_only",
+    "status": "passed",
+    "methods": 11,
+    "audit": {
+      "runs_checked": 11,
+      "common_targets": true,
+      "checks": [
+        {
+          "method": "fame_scm_active",
+          "mask": 0,
+          "seed": 0,
+          "prediction_records": 336,
+          "rmse": 2.637498123418552,
+          "status": "passed"
+        },
+        {
+          "method": "full_observation",
+          "mask": 0,
+          "seed": 0,
+          "prediction_records": 336,
+          "rmse": 2.5461852170779222,
+          "status": "passed"
+        },
+        {
+          "method": "imc",
+          "mask": 0,
+          "seed": 0,
+          "prediction_records": 336,
+          "rmse": 2.551987766304908,
+          "status": "passed"
+        },
+        {
+          "method": "independent_lgbm",
+          "mask": 0,
+          "seed": 0,
+          "prediction_records": 336,
+          "rmse": 2.5763084957655464,
+          "status": "passed"
+        },
+        {
+          "method": "independent_neural",
+          "mask": 0,
+          "seed": 0,
+          "prediction_records": 336,
+          "rmse": 2.560442627651693,
+          "status": "passed"
+        },
+        {
+          "method": "lightgbm",
+          "mask": 0,
+          "seed": 0,
+          "prediction_records": 336,
+          "rmse": 3.346790771935713,
+          "status": "passed"
+        },
+        {
+          "method": "nn_ei_c",
+          "mask": 0,
+          "seed": 0,
+          "prediction_records": 336,
+          "rmse": 2.5937522720197563,
+          "status": "passed"
+        },
+        {
+          "method": "pmf_a",
+          "mask": 0,
+          "seed": 0,
+          "prediction_records": 336,
+          "rmse": 2.644176089020716,
+          "status": "passed"
+        },
+        {
+          "method": "random_partial",
+          "mask": 0,
+          "seed": 0,
+          "prediction_records": 336,
+          "rmse": 2.578758115745018,
+          "status": "passed"
+        },
+        {
+          "method": "scm_passive",
+          "mask": 0,
+          "seed": 0,
+          "prediction_records": 336,
+          "rmse": 2.559313281924292,
+          "status": "passed"
+        },
+        {
+          "method": "softimpute",
+          "mask": 0,
+          "seed": 0,
+          "prediction_records": 336,
+          "rmse": 2.579577856180785,
+          "status": "passed"
+        }
+      ]
+    },
+    "consumers": 6,
+    "calibration_trials": 2,
+    "bootstrap_replicates": 10000,
+    "tables": {
+      "measured_runs": 18,
+      "files": [
+        "measured_runs.csv",
+        "measured_aggregate.csv",
+        "evidence_by_stage.csv"
+      ],
+      "aggregation": "Neural-seed means within masks; mean/SD across masks; cohorts, candidate counts, budgets and result kinds remain separate",
+      "scope": "Measured outputs only; paper reference targets are never read or copied"
+    },
+    "strict_protocol_match_and_mismatch": true
+  },
+  "cpu_prediction_equivalence": [
+    {
+      "method": "fame_scm_active",
+      "prediction_bytes_identical": true
+    },
+    {
+      "method": "full_observation",
+      "prediction_bytes_identical": true
+    },
+    {
+      "method": "imc",
+      "prediction_bytes_identical": true
+    },
+    {
+      "method": "independent_lgbm",
+      "prediction_bytes_identical": true
+    },
+    {
+      "method": "independent_neural",
+      "prediction_bytes_identical": true
+    },
+    {
+      "method": "lightgbm",
+      "prediction_bytes_identical": true
+    },
+    {
+      "method": "nn_ei_c",
+      "prediction_bytes_identical": true
+    },
+    {
+      "method": "pmf_a",
+      "prediction_bytes_identical": true
+    },
+    {
+      "method": "random_partial",
+      "prediction_bytes_identical": true
+    },
+    {
+      "method": "scm_passive",
+      "prediction_bytes_identical": true
+    },
+    {
+      "method": "softimpute",
+      "prediction_bytes_identical": true
+    }
+  ],
+  "extended_cpu": {
+    "kind": "synthetic_only",
+    "extended_backends": 40,
+    "insertion_runs": 7,
+    "equal_time_runs": 2,
+    "deployment_predict": true,
+    "inventory_replay": true
+  },
+  "extended_roundtrip": [
+    {
+      "expert": "sarima",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "ets",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "prophet",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "tsb",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "linear",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "xgboost",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "lightgbm",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "dlinear",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "timemixer",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "timesnet",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "catboost",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "nbeats",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "nhits",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "patchtst",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "deepar",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "tcn",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "gru",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "tft",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "mamba",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "chronos",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "sarima__variant",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "ets__variant",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "prophet__variant",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "tsb__variant",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "linear__variant",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "xgboost__variant",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "lightgbm__variant",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "dlinear__variant",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "timemixer__variant",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "timesnet__variant",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "catboost__variant",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "nbeats__variant",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "nhits__variant",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "patchtst__variant",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "deepar__variant",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "tcn__variant",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "gru__variant",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "tft__variant",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "mamba__variant",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    },
+    {
+      "expert": "chronos__variant",
+      "finite": true,
+      "shape": [
+        14
+      ],
+      "save_reload_max_difference": 0.0
+    }
+  ],
+  "repository": {
+    "python_files": 100,
+    "yaml_configs": 25,
+    "markdown_files": 15,
+    "dependency_files": 1,
+    "status": "passed"
+  },
+  "build": "sdist_and_wheel_passed",
+  "prior_22_validation": {
+    "version": "2.2.0",
+    "scope": "Dependency/documentation revision with source-only API smoke check; no paper-score claim",
+    "project_installation_required": false,
+    "dependency_files": [
+      "requirements.txt"
+    ],
+    "direct_dependencies": 26,
+    "dependency_resolution": {
+      "resolved_packages": 106,
+      "status": "passed",
+      "existing_tested_environment_changes": 0
+    },
+    "unit_tests": 83,
+    "readme_parity": {
+      "status": "passed",
+      "paired_sections": 13,
+      "identical_code_blocks": 10,
+      "bash_only": true,
+      "dependency_files": 1,
+      "project_install_required": false
+    },
+    "bash_api": {
+      "kind": "synthetic_only",
+      "status": "passed",
+      "methods": 2,
+      "audit": {
+        "runs_checked": 2,
+        "common_targets": true,
+        "checks": [
+          {
+            "method": "fame_scm_active",
+            "mask": 0,
+            "seed": 0,
+            "prediction_records": 336,
+            "rmse": 3.2613113273263195,
+            "status": "passed"
+          },
+          {
+            "method": "lightgbm",
+            "mask": 0,
+            "seed": 0,
+            "prediction_records": 336,
+            "rmse": 3.8604182492046966,
+            "status": "passed"
+          }
+        ]
+      }
+    },
+    "bash_api_launch_directory": "outside the project root",
+    "repository": {
+      "python_files": 96,
+      "yaml_configs": 25,
+      "markdown_files": 14,
+      "dependency_files": 1,
+      "status": "passed"
+    },
+    "build": {
+      "sdist": "passed",
+      "wheel": "passed",
+      "dependency_metadata_matches_requirements": true,
+      "bash_wrapper_in_sdist": true
+    },
+    "prior_21_validation": {
+      "version": "2.1.0",
+      "scope": "Source imports and synthetic checks; no paper benchmark-score claim",
+      "project_installation_required": false,
+      "core_environment_project_distribution": "absent before direct source/API/revision tests",
+      "unit_tests": 83,
+      "readme_parity": {
+        "status": "passed",
+        "paired_sections": 13,
+        "identical_code_blocks": 15,
+        "project_install_required": false
+      },
+      "api": {
+        "kind": "synthetic_only",
+        "status": "passed",
+        "methods": 2,
+        "audit": {
+          "runs_checked": 2,
+          "common_targets": true,
+          "checks": [
+            {
+              "method": "fame_scm_active",
+              "mask": 0,
+              "seed": 0,
+              "prediction_records": 336,
+              "rmse": 3.2613113273263195,
+              "status": "passed"
+            },
+            {
+              "method": "lightgbm",
+              "mask": 0,
+              "seed": 0,
+              "prediction_records": 336,
+              "rmse": 3.8604182492046966,
+              "status": "passed"
+            }
+          ]
+        }
+      },
+      "revision": {
+        "kind": "synthetic_only",
+        "status": "passed",
+        "methods": 11,
+        "audit": {
+          "runs_checked": 11,
+          "common_targets": true,
+          "checks": [
+            {
+              "method": "fame_scm_active",
+              "mask": 0,
+              "seed": 0,
+              "prediction_records": 336,
+              "rmse": 2.637498123418552,
+              "status": "passed"
+            },
+            {
+              "method": "full_observation",
+              "mask": 0,
+              "seed": 0,
+              "prediction_records": 336,
+              "rmse": 2.5461852170779222,
+              "status": "passed"
+            },
+            {
+              "method": "imc",
+              "mask": 0,
+              "seed": 0,
+              "prediction_records": 336,
+              "rmse": 2.551987766304908,
+              "status": "passed"
+            },
+            {
+              "method": "independent_lgbm",
+              "mask": 0,
+              "seed": 0,
+              "prediction_records": 336,
+              "rmse": 2.5763084957655464,
+              "status": "passed"
+            },
+            {
+              "method": "independent_neural",
+              "mask": 0,
+              "seed": 0,
+              "prediction_records": 336,
+              "rmse": 2.560442627651693,
+              "status": "passed"
+            },
+            {
+              "method": "lightgbm",
+              "mask": 0,
+              "seed": 0,
+              "prediction_records": 336,
+              "rmse": 3.346790771935713,
+              "status": "passed"
+            },
+            {
+              "method": "nn_ei_c",
+              "mask": 0,
+              "seed": 0,
+              "prediction_records": 336,
+              "rmse": 2.5937522720197563,
+              "status": "passed"
+            },
+            {
+              "method": "pmf_a",
+              "mask": 0,
+              "seed": 0,
+              "prediction_records": 336,
+              "rmse": 2.644176089020716,
+              "status": "passed"
+            },
+            {
+              "method": "random_partial",
+              "mask": 0,
+              "seed": 0,
+              "prediction_records": 336,
+              "rmse": 2.578758115745018,
+              "status": "passed"
+            },
+            {
+              "method": "scm_passive",
+              "mask": 0,
+              "seed": 0,
+              "prediction_records": 336,
+              "rmse": 2.559313281924292,
+              "status": "passed"
+            },
+            {
+              "method": "softimpute",
+              "mask": 0,
+              "seed": 0,
+              "prediction_records": 336,
+              "rmse": 2.579577856180785,
+              "status": "passed"
+            }
+          ]
+        },
+        "consumers": 6,
+        "calibration_trials": 2,
+        "bootstrap_replicates": 10000,
+        "tables": {
+          "measured_runs": 18,
+          "files": [
+            "measured_runs.csv",
+            "measured_aggregate.csv",
+            "evidence_by_stage.csv"
+          ],
+          "aggregation": "Neural-seed means within masks; mean/SD across masks; cohorts, candidate counts, budgets and result kinds remain separate",
+          "scope": "Measured outputs only; paper reference targets are never read or copied"
+        },
+        "strict_protocol_match_and_mismatch": true
+      },
+      "comparison_to_20": [
+        {
+          "method": "fame_scm_active",
+          "prediction_bytes_identical": true
+        },
+        {
+          "method": "full_observation",
+          "prediction_bytes_identical": true
+        },
+        {
+          "method": "imc",
+          "prediction_bytes_identical": true
+        },
+        {
+          "method": "independent_lgbm",
+          "prediction_bytes_identical": true
+        },
+        {
+          "method": "independent_neural",
+          "prediction_bytes_identical": true
+        },
+        {
+          "method": "lightgbm",
+          "prediction_bytes_identical": true
+        },
+        {
+          "method": "nn_ei_c",
+          "prediction_bytes_identical": true
+        },
+        {
+          "method": "pmf_a",
+          "prediction_bytes_identical": true
+        },
+        {
+          "method": "random_partial",
+          "prediction_bytes_identical": true
+        },
+        {
+          "method": "scm_passive",
+          "prediction_bytes_identical": true
+        },
+        {
+          "method": "softimpute",
+          "prediction_bytes_identical": true
+        }
+      ],
+      "full_third_party_dependency_resolution": "passed",
+      "prior_20_validation": {
+        "date": "2026-10-11",
+        "version": "2.0.0",
+        "scope": "synthetic_execution_contracts_not_paper_scores",
+        "environment": {
+          "python": "3.12.14",
+          "torch": "2.6.0+cpu",
+          "transformers": "4.48.3",
+          "platform": "Linux CPU; CI matrix for other versions configured but not executed here"
+        },
+        "unit_tests": {
+          "count": 81,
+          "status": "passed",
+          "environment": "isolated core-only editable installation"
+        },
+        "revision": {
+          "methods": 11,
+          "common_teacher_consumers": 6,
+          "calibration_trials": 2,
+          "bootstrap_draws": 10000,
+          "prediction_and_ledger_audit": "passed",
+          "strict_protocol_match_and_mismatch": "passed",
+          "measured_exports": "passed",
+          "status": "passed"
+        },
+        "daily_hourly": {
+          "datasets": [
+            "snbc",
+            "electricity",
+            "traffic"
+          ],
+          "methods_per_dataset": 4,
+          "deployment": "passed",
+          "status": "passed"
+        },
+        "retail": {
+          "kind": "synthetic_schema_validation_not_benchmark",
+          "datasets": [
+            "m5",
+            "favorita"
+          ],
+          "experts": 10,
+          "methods_per_dataset": 10,
+          "horizon": 28,
+          "prediction_rows_per_method": 2240,
+          "future_prediction_rows_per_dataset": 448,
+          "holdout_methods": 2,
+          "frozen_cost_repeat_prediction_bytes_equal": true,
+          "frozen_cost_repeat_acquisition_equal": true
+        },
+        "extended": {
+          "kind": "synthetic_only",
+          "extended_backends": 40,
+          "insertion_runs": 7,
+          "equal_time_runs": 2,
+          "deployment_predict": true,
+          "inventory_replay": true
+        },
+        "insertion": {
+          "kind": "synthetic_only",
+          "old_pool_size": 10,
+          "new_backends": [
+            {
+              "expert": "catboost",
+              "runs": 10,
+              "all_frozen": true
+            },
+            {
+              "expert": "patchtst",
+              "runs": 10,
+              "all_frozen": true
+            },
+            {
+              "expert": "nhits",
+              "runs": 10,
+              "all_frozen": true
+            },
+            {
+              "expert": "deepar",
+              "runs": 10,
+              "all_frozen": true
+            },
+            {
+              "expert": "chronos",
+              "runs": 10,
+              "all_frozen": true
+            }
+          ],
+          "completed_runs": 50
+        },
+        "formatting": {
+          "status": "passed"
+        },
+        "repository": {
+          "python_files": 92,
+          "yaml_configs": 25,
+          "markdown_files": 14,
+          "dependency_files": 2,
+          "status": "passed"
+        },
+        "dependencies": {
+          "full_requirements_resolution": "passed",
+          "isolated_core_install": "passed",
+          "lock": "Linux CPython 3.12 CPU; complete tested transitive environment"
+        },
+        "distributions": {
+          "sdist": "passed",
+          "wheel": "passed",
+          "installed_module_cli": "passed",
+          "console_entry": "passed",
+          "vendored_license": "checked"
+        },
+        "unverified": [
+          "Original paper benchmark scores",
+          "Actual 100K cohort/runtime/memory",
+          "Two-GPU resource hours and scheduler",
+          "Original inventory effects",
+          "Legacy FAME D1-D3 and all C8 controls"
+        ]
+      },
+      "layout": "fame_scm at repository root; imports and CLI unchanged; direct public API added",
+      "source_distribution_build": "passed",
+      "wheel_build": "passed",
+      "repository": {
+        "python_files": 96,
+        "yaml_configs": 25,
+        "markdown_files": 14,
+        "dependency_files": 4,
+        "status": "passed"
+      }
+    }
+  }
+}

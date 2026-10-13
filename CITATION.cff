@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "Please cite the associated FAME-SCM manuscript when using this implementation."
+title: "FAME-SCM: Sparse Competence Mining for Heterogeneous Time Series"
+type: software
+version: 2.3.0
+authors:
+  - family-names: Li
+    given-names: Qianyang
+  - family-names: Zhang
+    given-names: Xingjun
+  - family-names: Wang
+    given-names: Shaoxun
+  - family-names: Peng
+    given-names: Tao
+  - family-names: Wei
+    given-names: Jia
+preferred-citation:
+  type: manuscript
+  title: "Sparse Competence Mining for Forecastability-Aware Expert Routing in Heterogeneous Time Series"
+  authors:
+    - family-names: Li
+      given-names: Qianyang
+    - family-names: Zhang
+      given-names: Xingjun
+    - family-names: Wang
+      given-names: Shaoxun
+    - family-names: Peng
+      given-names: Tao
+    - family-names: Wei
+      given-names: Jia

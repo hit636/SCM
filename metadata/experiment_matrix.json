@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "scope": "Executable manuscript correspondence; commands are planned benchmark protocols, not evidence of achieved paper scores",
+  "experiments": [
+    {
+      "reference": "V",
+      "question": "Five-dataset accuracy/work",
+      "command": "python scripts/run_datasets.py --profile main --out runs/main",
+      "status": "supported; original data/protocol required"
+    },
+    {
+      "reference": "VI",
+      "question": "Paired inference",
+      "command": "python run.py compare --out runs/snbc --method fame_scm_active --reference nn_ei_c --metric rmse --replicates 10000",
+      "status": "supported; real paired main records required"
+    },
+    {
+      "reference": "VII",
+      "question": "Equal construction time",
+      "command": "python run.py equal-time --config configs/experiments/snbc_main.yaml --out runs/time --seconds 3600 7200 --preparation included",
+      "status": "supported; author deadline/hardware required"
+    },
+    {
+      "reference": "VIII",
+      "question": "Objectives and common-teacher consumers",
+      "command": "python run.py suite --config configs/experiments/snbc_main.yaml --profile ablations --out runs/ablations --execute; python run.py consumers --checkpoint runs/snbc/fame_scm_active/mask_0/seed_0/build_state.pkl --out runs/consumers",
+      "status": "supported engineering controls; repeat each mask/seed"
+    },
+    {
+      "reference": "IX / X / Fig.5",
+      "question": "Scale/resources",
+      "command": "python run.py suite --config configs/experiments/snbc_main.yaml --profile scale --out runs/scale --execute",
+      "status": "CPU/stage work supported; GPU telemetry and real 100K cohort required"
+    },
+    {
+      "reference": "XI(a) / C8",
+      "question": "Row transfer",
+      "command": "python run.py holdout --config configs/experiments/snbc_main.yaml --out runs/holdout --component 1 --fraction 0.2",
+      "status": "identity transfer supported; legacy controls and short-lifecycle holdout protocol not fully reconstructed"
+    },
+    {
+      "reference": "XI(b) / C9 / Fig.6",
+      "question": "Independent new-column insertion",
+      "command": "python scripts/extended_suite.py insertion --config configs/experiments/snbc_main.yaml --out runs/insertion --checkpoint \"runs/snbc/fame_scm_active/mask_{mask}/seed_{seed}/build_state.pkl\" --execute",
+      "status": "supported for all five inserted backends; original runs required"
+    },
+    {
+      "reference": "Fig.3 / C1",
+      "question": "Mining budgets",
+      "command": "python run.py suite --config configs/experiments/snbc_main.yaml --profile budgets --out runs/budgets --execute",
+      "status": "supported; rho is mining only"
+    },
+    {
+      "reference": "Fig.4 / C2 / C4",
+      "question": "Recovery/acquisition mechanisms",
+      "command": "python run.py suite --config configs/experiments/snbc_main.yaml --profile mechanism --out runs/mechanism --execute",
+      "status": "supported"
+    },
+    {
+      "reference": "C3",
+      "question": "Recovery architecture",
+      "command": "python run.py suite --config configs/experiments/snbc_main.yaml --profile recovery --out runs/recovery --execute",
+      "status": "supported; passive recovered masks common under fixed seeds"
+    },
+    {
+      "reference": "C5 / C6",
+      "question": "Sensitivity and router operators",
+      "command": "python run.py suite --config configs/experiments/snbc_main.yaml --profile sensitivity --out runs/sensitivity --execute",
+      "status": "supported plus consumers command"
+    },
+    {
+      "reference": "C7",
+      "question": "Pool-local work/accuracy",
+      "command": "python run.py suite --config configs/experiments/snbc_main.yaml --profile pools --out runs/pools --execute",
+      "status": "supported; nested pool definitions are explicit repository choices"
+    },
+    {
+      "reference": "D1 / D2 / D3",
+      "question": "Historical FAME baselines",
+      "command": "none",
+      "status": "requires original legacy selector definitions and artifacts; not claimed reproduced"
+    },
+    {
+      "reference": "D4",
+      "question": "Fixed-policy inventory",
+      "command": "python run.py inventory --predictions runs/predictions.csv --daily data/inventory_daily.csv --policy configs/experiments/inventory_policy.yaml --out runs/replay",
+      "status": "replay engine supported; real policy/state/demand proxy required"
+    },
+    {
+      "reference": "Eq.29",
+      "question": "Bound diagnostics",
+      "command": "automatic when evaluation.hidden_audit=true",
+      "status": "post-selection component-loss diagnostic; not fused-RMSE/adaptive sample-complexity proof"
+    }
+  ]
+}

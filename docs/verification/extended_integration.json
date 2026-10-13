@@ -1,0 +1,8 @@
+{
+  "kind": "synthetic_only",
+  "extended_backends": 40,
+  "insertion_runs": 7,
+  "equal_time_runs": 2,
+  "deployment_predict": true,
+  "inventory_replay": true
+}

@@ -1,0 +1,41 @@
+data:
+  format: wide_csv
+  path: data/electricity/electricity.csv
+  encoding: utf-8-sig
+  date: date
+  entity_columns:
+  - vem_id
+  - merc_id
+  target: daily_quantity
+  missing_dates: zero
+  duplicates: first
+  negative_target: error
+  availability_column: null
+  max_series: null
+  min_observed_train_days: 1
+  min_valid_train_days: 49
+  dataset: electricity
+  frequency: h
+  value_columns: null
+  drop_columns: []
+  missing_timestamps: error
+  standardization: train_zscore
+  numeric_features: []
+  categorical_features: []
+  min_observed_train_steps: 96
+split:
+  fractions:
+  - 0.6
+  - 0.1
+  - 0.1
+  - 0.2
+  cutoffs: null
+forecast:
+  lookback: 168
+  horizon: 168
+  seasonality: 24
+  origin_stride: 24
+  max_origins_per_stage: null
+  train_stride: 24
+  min_valid_target_fraction: 1.0
+  clip_nonnegative: false

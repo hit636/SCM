@@ -1,0 +1,4 @@
+extends:
+- m5_main.yaml
+- ../experts/pool_20.yaml
+output: runs/m5_20

@@ -1,0 +1,4 @@
+extends:
+- favorita_main.yaml
+- ../experts/pool_20.yaml
+output: runs/favorita_20

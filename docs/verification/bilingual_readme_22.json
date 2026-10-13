@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "paired_sections": 13,
+  "identical_code_blocks": 10,
+  "bash_only": true,
+  "dependency_files": 1,
+  "project_install_required": false
+}

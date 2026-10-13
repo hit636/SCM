@@ -1,0 +1,7 @@
+lead_days: 1
+review_days: 1
+forecast_horizon: 14
+safety_units: 0
+under_weight: 3
+over_weight: 1
+integer_orders: true

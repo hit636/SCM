@@ -1,0 +1,15 @@
+{
+  "kind": "synthetic_schema_validation_not_benchmark",
+  "datasets": [
+    "m5",
+    "favorita"
+  ],
+  "experts": 10,
+  "methods_per_dataset": 10,
+  "horizon": 28,
+  "prediction_rows_per_method": 2240,
+  "future_prediction_rows_per_dataset": 448,
+  "holdout_methods": 2,
+  "frozen_cost_repeat_prediction_bytes_equal": true,
+  "frozen_cost_repeat_acquisition_equal": true
+}

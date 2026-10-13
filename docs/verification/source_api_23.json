@@ -1,0 +1,27 @@
+{
+  "kind": "synthetic_only",
+  "status": "passed",
+  "methods": 2,
+  "audit": {
+    "runs_checked": 2,
+    "common_targets": true,
+    "checks": [
+      {
+        "method": "fame_scm_active",
+        "mask": 0,
+        "seed": 0,
+        "prediction_records": 336,
+        "rmse": 3.2613113273263195,
+        "status": "passed"
+      },
+      {
+        "method": "lightgbm",
+        "mask": 0,
+        "seed": 0,
+        "prediction_records": 336,
+        "rmse": 3.8604182492046966,
+        "status": "passed"
+      }
+    ]
+  }
+}

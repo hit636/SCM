@@ -1,0 +1,105 @@
+extends:
+- ../datasets/traffic.yaml
+- ../experts/pool_5.yaml
+seed: 42
+device: cpu
+threads: 1
+result_kind: independent_reimplementation
+scm:
+  rho: 0.4
+  members: 2
+  batches: 2
+  epochs: 5
+  batch_size: 64
+  patience: 10
+  learning_rate: 0.001
+  rank_margin: 0.05
+  lambda_rank: 0.2
+  lambda_factor: 0.0001
+  lambda_encoder: 0.0001
+  ensemble_keep_probability: 0.85
+  sd_ddof: 1
+  mad_multiplier: 1.0
+  scale_floor: 0.1
+  alpha: 1.0
+  beta: 0.5
+  zeta: 0.1
+teacher:
+  tau: 0.3
+  eta: 0.5
+  nu: 0.05
+router:
+  epochs: 5
+  patience: 15
+  batch_size: 64
+  learning_rate: 0.001
+  dropout: 0.1
+  prediction_loss: mse
+  lambda_pred: 1.0
+  lambda_teacher: 1.0
+  lambda_balance: 0.01
+  lambda_cost: 0.01
+  r: 2
+  threshold: 0.05
+  calibration_thresholds:
+  - 0.0
+  - 0.05
+  - 0.1
+baselines:
+  methods:
+  - lightgbm
+  - full_observation
+  - scm_passive
+  - fame_scm_active
+  epochs: 40
+  neighbors: 5
+  rank: 4
+  softimpute_lambda: 0.1
+  fformpp_steps: 20
+  fformpp_features: 4
+  fformpp_samples: 16
+  pmf_latent_dim: 3
+evaluation:
+  hidden_audit: true
+  mask_seeds:
+  - 0
+  neural_seeds:
+  - 0
+experts:
+  names:
+  - linear
+  - lightgbm
+  - dlinear
+  - timemixer
+  - timesnet
+  anchor: lightgbm
+  tree_estimators: 20
+  neural_epochs: 2
+  batch_size: 64
+  learning_rate: 0.001
+  max_train_windows: 128
+  sarima_maxiter: 30
+  d_model: 16
+  d_ff: 32
+  e_layers: 1
+  cost_weights:
+    sarima: 0.8
+    ets: 0.8
+    prophet: 1.5
+    tsb: 0.3
+    linear: 0.6
+    xgboost: 1.1
+    lightgbm: 1.0
+    dlinear: 2.0
+    timemixer: 3.6
+    timesnet: 4.1
+data:
+  path: data/traffic/traffic.csv
+  max_series: 12
+forecast:
+  max_origins_per_stage: 1
+  lookback: 96
+  horizon: 96
+cost_profiling:
+  enabled: false
+output: runs/traffic_smoke

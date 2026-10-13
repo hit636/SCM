@@ -1,0 +1,9 @@
+{
+  "version": "2.1.0",
+  "sdist": "passed",
+  "wheel": "passed",
+  "public_api_in_wheel": true,
+  "vendor_license_in_wheel": true,
+  "example_api_in_sdist": true,
+  "installation_required_for_source_use": false
+}

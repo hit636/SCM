@@ -1,0 +1,114 @@
+extends:
+- ../datasets/snbc.yaml
+- ../experts/pool_10.yaml
+seed: 42
+device: cpu
+threads: 1
+result_kind: independent_reimplementation
+scm:
+  rho: 0.4
+  members: 5
+  batches: 4
+  epochs: 6
+  batch_size: 64
+  patience: 4
+  learning_rate: 0.001
+  rank_margin: 0.05
+  lambda_rank: 0.2
+  lambda_factor: 0.0001
+  lambda_encoder: 0.0001
+  ensemble_keep_probability: 0.85
+  sd_ddof: 1
+  mad_multiplier: 1.0
+  scale_floor: 0.1
+  alpha: 1.0
+  beta: 0.5
+  zeta: 0.1
+teacher:
+  tau: 0.3
+  eta: 0.5
+  nu: 0.05
+router:
+  epochs: 10
+  patience: 6
+  batch_size: 64
+  learning_rate: 0.001
+  dropout: 0.1
+  prediction_loss: mse
+  lambda_pred: 1.0
+  lambda_teacher: 1.0
+  lambda_balance: 0.01
+  lambda_cost: 0.01
+  r: 2
+  threshold: 0.05
+  calibration_thresholds:
+  - 0.0
+  - 0.05
+  - 0.1
+baselines:
+  methods:
+  - lightgbm
+  - full_observation
+  - random_partial
+  - softimpute
+  - imc
+  - independent_lgbm
+  - fformpp_b
+  - pmf_a
+  - scm_passive
+  - fame_scm_active
+  epochs: 10
+  neighbors: 5
+  rank: 4
+  softimpute_lambda: 0.1
+  fformpp_steps: 2
+  fformpp_features: 2
+  fformpp_samples: 4
+  pmf_latent_dim: 3
+evaluation:
+  hidden_audit: true
+  mask_seeds:
+  - 0
+  neural_seeds:
+  - 0
+experts:
+  names:
+  - sarima
+  - ets
+  - prophet
+  - tsb
+  - linear
+  - xgboost
+  - lightgbm
+  - dlinear
+  - timemixer
+  - timesnet
+  anchor: lightgbm
+  tree_estimators: 20
+  neural_epochs: 2
+  batch_size: 64
+  learning_rate: 0.001
+  max_train_windows: 128
+  sarima_maxiter: 10
+  d_model: 16
+  d_ff: 32
+  e_layers: 1
+  cost_weights:
+    sarima: 0.8
+    ets: 0.8
+    prophet: 1.5
+    tsb: 0.3
+    linear: 0.6
+    xgboost: 1.1
+    lightgbm: 1.0
+    dlinear: 2.0
+    timemixer: 3.6
+    timesnet: 4.1
+data:
+  path: data/daily_sales_data.csv
+  max_series: 16
+forecast:
+  max_origins_per_stage: 2
+cost_profiling:
+  enabled: false
+output: runs/ten_experts_smoke

@@ -1,0 +1,32 @@
+{
+  "kind": "synthetic_only",
+  "old_pool_size": 10,
+  "new_backends": [
+    {
+      "expert": "catboost",
+      "runs": 10,
+      "all_frozen": true
+    },
+    {
+      "expert": "patchtst",
+      "runs": 10,
+      "all_frozen": true
+    },
+    {
+      "expert": "nhits",
+      "runs": 10,
+      "all_frozen": true
+    },
+    {
+      "expert": "deepar",
+      "runs": 10,
+      "all_frozen": true
+    },
+    {
+      "expert": "chronos",
+      "runs": 10,
+      "all_frozen": true
+    }
+  ],
+  "completed_runs": 50
+}

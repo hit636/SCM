@@ -1,0 +1,8 @@
+All rights reserved.
+
+No license is granted for project-authored source code by this distribution.
+Rights in that code remain with its respective rights holders.
+
+Third-party material retains its own license. The vendored Time-Series-Library
+modules are licensed under the MIT License reproduced in
+fame_scm/vendor/tslib/LICENSE. See THIRD_PARTY.md for source attribution.

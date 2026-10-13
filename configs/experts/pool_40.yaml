@@ -1,0 +1,206 @@
+experts:
+  names:
+  - sarima
+  - ets
+  - prophet
+  - tsb
+  - linear
+  - xgboost
+  - lightgbm
+  - dlinear
+  - timemixer
+  - timesnet
+  - catboost
+  - nbeats
+  - nhits
+  - patchtst
+  - deepar
+  - tcn
+  - gru
+  - tft
+  - mamba
+  - chronos
+  - sarima__variant
+  - ets__variant
+  - prophet__variant
+  - tsb__variant
+  - linear__variant
+  - xgboost__variant
+  - lightgbm__variant
+  - dlinear__variant
+  - timemixer__variant
+  - timesnet__variant
+  - catboost__variant
+  - nbeats__variant
+  - nhits__variant
+  - patchtst__variant
+  - deepar__variant
+  - tcn__variant
+  - gru__variant
+  - tft__variant
+  - mamba__variant
+  - chronos__variant
+  specs:
+    sarima:
+      kind: sarima
+      parameters: {}
+    ets:
+      kind: ets
+      parameters: {}
+    prophet:
+      kind: prophet
+      parameters: {}
+    tsb:
+      kind: tsb
+      parameters: {}
+    linear:
+      kind: linear
+      parameters: {}
+    xgboost:
+      kind: xgboost
+      parameters: {}
+    lightgbm:
+      kind: lightgbm
+      parameters: {}
+    dlinear:
+      kind: dlinear
+      parameters: {}
+    timemixer:
+      kind: timemixer
+      parameters: {}
+    timesnet:
+      kind: timesnet
+      parameters: {}
+    catboost:
+      kind: catboost
+      parameters: {}
+    nbeats:
+      kind: nbeats
+      parameters: {}
+    nhits:
+      kind: nhits
+      parameters: {}
+    patchtst:
+      kind: patchtst
+      parameters: {}
+    deepar:
+      kind: deepar
+      parameters: {}
+    tcn:
+      kind: tcn
+      parameters: {}
+    gru:
+      kind: gru
+      parameters: {}
+    tft:
+      kind: tft
+      parameters: {}
+    mamba:
+      kind: mamba
+      parameters: {}
+    chronos:
+      kind: chronos
+      parameters: {}
+    sarima__variant:
+      kind: sarima
+      parameters:
+        order:
+        - 2
+        - 0
+        - 0
+    ets__variant:
+      kind: ets
+      parameters:
+        damped_trend: true
+    prophet__variant:
+      kind: prophet
+      parameters:
+        changepoint_prior_scale: 0.1
+    tsb__variant:
+      kind: tsb
+      parameters:
+        alpha: 0.2
+    linear__variant:
+      kind: linear
+      parameters:
+        ridge_alpha: 10.0
+    xgboost__variant:
+      kind: xgboost
+      parameters:
+        tree_depth: 6
+    lightgbm__variant:
+      kind: lightgbm
+      parameters:
+        num_leaves: 31
+    dlinear__variant:
+      kind: dlinear
+      parameters:
+        moving_avg: 13
+    timemixer__variant:
+      kind: timemixer
+      parameters:
+        d_model: 32
+        d_ff: 64
+    timesnet__variant:
+      kind: timesnet
+      parameters:
+        d_model: 32
+        d_ff: 64
+    catboost__variant:
+      kind: catboost
+      parameters:
+        depth: 7
+    nbeats__variant:
+      kind: nbeats
+      parameters:
+        mlp_units:
+        - - 64
+          - 64
+        - - 64
+          - 64
+        - - 64
+          - 64
+    nhits__variant:
+      kind: nhits
+      parameters:
+        mlp_units:
+        - - 64
+          - 64
+        - - 64
+          - 64
+        - - 64
+          - 64
+    patchtst__variant:
+      kind: patchtst
+      parameters:
+        hidden_size: 32
+        patch_len: 8
+        stride: 4
+    deepar__variant:
+      kind: deepar
+      parameters:
+        lstm_hidden_size: 64
+    tcn__variant:
+      kind: tcn
+      parameters:
+        encoder_hidden_size: 64
+    gru__variant:
+      kind: gru
+      parameters:
+        encoder_hidden_size: 64
+    tft__variant:
+      kind: tft
+      parameters:
+        hidden_size: 64
+    mamba__variant:
+      kind: mamba
+      parameters:
+        width: 32
+        state_size: 16
+    chronos__variant:
+      kind: chronos
+      parameters:
+        num_samples: 40
+  chronos_model: amazon/chronos-t5-tiny
+  chronos_revision: 129a2d204d6ab4205a0049a160402deefaf161b2
+  manifest_origin: fixed repository expert configurations

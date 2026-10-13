@@ -1,0 +1,86 @@
+experts:
+  names:
+  - sarima
+  - ets
+  - prophet
+  - tsb
+  - linear
+  - xgboost
+  - lightgbm
+  - dlinear
+  - timemixer
+  - timesnet
+  - catboost
+  - nbeats
+  - nhits
+  - patchtst
+  - deepar
+  - tcn
+  - gru
+  - tft
+  - mamba
+  - chronos
+  specs:
+    sarima:
+      kind: sarima
+      parameters: {}
+    ets:
+      kind: ets
+      parameters: {}
+    prophet:
+      kind: prophet
+      parameters: {}
+    tsb:
+      kind: tsb
+      parameters: {}
+    linear:
+      kind: linear
+      parameters: {}
+    xgboost:
+      kind: xgboost
+      parameters: {}
+    lightgbm:
+      kind: lightgbm
+      parameters: {}
+    dlinear:
+      kind: dlinear
+      parameters: {}
+    timemixer:
+      kind: timemixer
+      parameters: {}
+    timesnet:
+      kind: timesnet
+      parameters: {}
+    catboost:
+      kind: catboost
+      parameters: {}
+    nbeats:
+      kind: nbeats
+      parameters: {}
+    nhits:
+      kind: nhits
+      parameters: {}
+    patchtst:
+      kind: patchtst
+      parameters: {}
+    deepar:
+      kind: deepar
+      parameters: {}
+    tcn:
+      kind: tcn
+      parameters: {}
+    gru:
+      kind: gru
+      parameters: {}
+    tft:
+      kind: tft
+      parameters: {}
+    mamba:
+      kind: mamba
+      parameters: {}
+    chronos:
+      kind: chronos
+      parameters: {}
+  chronos_model: amazon/chronos-t5-tiny
+  chronos_revision: 129a2d204d6ab4205a0049a160402deefaf161b2
+  manifest_origin: fixed repository expert configurations

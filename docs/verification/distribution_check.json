@@ -1,0 +1,8 @@
+{
+  "sdist": "passed",
+  "wheel": "passed",
+  "installed_wheel_module_cli": "passed",
+  "installed_wheel_version": "2.0.0",
+  "vendored_license_in_installed_wheel": "passed",
+  "scope": "Wheel installed without dependencies over the isolated core environment; import and CLI verified outside source cwd"
+}

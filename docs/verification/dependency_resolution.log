@@ -1,0 +1,6 @@
+Resolved 107 packages in 8.02s
+Would download 1 package
+Would uninstall 1 package
+Would install 1 package
+ - fame-scm==2.0.0 (from file:///workspace/scratch/da37ab8908fd/work/FAME-SCM)
+ + fame-scm @ file:///workspace/scratch/da37ab8908fd/work/FAME-SCM

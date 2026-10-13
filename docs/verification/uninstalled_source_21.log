@@ -1,0 +1,5 @@
+Using Python 3.12.14 environment at: .venv-core
+Uninstalled 1 package in 2ms
+ - fame-scm==2.0.0 (from file:///workspace/scratch/da37ab8908fd/work/FAME-SCM/dist/fame_scm-2.0.0-py3-none-any.whl)
+/workspace/scratch/da37ab8908fd/work/FAME-SCM/fame_scm/__init__.py
+2.1.0

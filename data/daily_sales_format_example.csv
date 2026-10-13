@@ -1,0 +1,4 @@
+﻿date,vem_id,merc_id,daily_quantity,merc_sale_price,coupon_amount,daily_sales_amount,merc_brand_code,merc_type_code,machine_type,capacity,scene_code,city_name
+2025/11/5,GFWGFCN029000009,05d943bda8ca45689e8da681e5b0db38,1,6.14,0,6.14,18d06f67-bcdd-49af-879a-cb1ceea5321c,cc2e7e28c95711e98b85c85b7630adab,0,0,60103,西安市
+2025/10/14,GFWGFCN029000009,05d943bda8ca45689e8da681e5b0db38,2,6.14,0,12.28,18d06f67-bcdd-49af-879a-cb1ceea5321c,cc2e7e28c95711e98b85c85b7630adab,0,0,11410,西安市
+2025/9/24,GFWGFCN029000009,05d943bda8ca45689e8da681e5b0db38,1,6.14,0,6.14,18d06f67-bcdd-49af-879a-cb1ceea5321c,cc2e7e28c95711e98b85c85b7630adab,0,0,11410,西安市

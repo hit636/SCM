@@ -1,0 +1,322 @@
+[
+  {
+    "expert": "sarima",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "ets",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "prophet",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "tsb",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "linear",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "xgboost",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "lightgbm",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "dlinear",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "timemixer",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "timesnet",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "catboost",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "nbeats",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "nhits",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "patchtst",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "deepar",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "tcn",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "gru",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "tft",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "mamba",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "chronos",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "sarima__variant",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "ets__variant",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "prophet__variant",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "tsb__variant",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "linear__variant",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "xgboost__variant",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "lightgbm__variant",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "dlinear__variant",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "timemixer__variant",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "timesnet__variant",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "catboost__variant",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "nbeats__variant",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "nhits__variant",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "patchtst__variant",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "deepar__variant",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "tcn__variant",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "gru__variant",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "tft__variant",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "mamba__variant",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  },
+  {
+    "expert": "chronos__variant",
+    "finite": true,
+    "shape": [
+      14
+    ],
+    "save_reload_max_difference": 0.0
+  }
+]

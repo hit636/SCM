@@ -1,0 +1,12 @@
+{
+  "status": "ready",
+  "requested": "cpu",
+  "selected": "cpu",
+  "torch_version": "2.6.0+cpu",
+  "torch_cuda_build": null,
+  "cuda_available": false,
+  "visible_gpu_count": 0,
+  "gpu_name": null,
+  "gpu_total_memory_bytes": null,
+  "probe": "passed"
+}

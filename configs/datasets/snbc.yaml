@@ -1,0 +1,33 @@
+data:
+  format: snbc
+  path: data/snbc/daily_sales_data.csv
+  encoding: utf-8-sig
+  date: date
+  entity_columns:
+  - vem_id
+  - merc_id
+  target: daily_quantity
+  missing_dates: zero
+  duplicates: first
+  negative_target: error
+  availability_column: null
+  max_series: 128
+  min_observed_train_days: 15
+  min_valid_train_days: 15
+  frequency: D
+split:
+  fractions:
+  - 0.7
+  - 0.05
+  - 0.05
+  - 0.2
+  cutoffs: null
+forecast:
+  lookback: 49
+  horizon: 14
+  seasonality: 7
+  origin_stride: 14
+  max_origins_per_stage: 2
+  train_stride: 7
+  min_valid_target_fraction: 0.8
+  clip_nonnegative: true

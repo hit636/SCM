@@ -1,0 +1,46 @@
+[
+  {
+    "method": "fame_scm_active",
+    "prediction_bytes_identical": true
+  },
+  {
+    "method": "full_observation",
+    "prediction_bytes_identical": true
+  },
+  {
+    "method": "imc",
+    "prediction_bytes_identical": true
+  },
+  {
+    "method": "independent_lgbm",
+    "prediction_bytes_identical": true
+  },
+  {
+    "method": "independent_neural",
+    "prediction_bytes_identical": true
+  },
+  {
+    "method": "lightgbm",
+    "prediction_bytes_identical": true
+  },
+  {
+    "method": "nn_ei_c",
+    "prediction_bytes_identical": true
+  },
+  {
+    "method": "pmf_a",
+    "prediction_bytes_identical": true
+  },
+  {
+    "method": "random_partial",
+    "prediction_bytes_identical": true
+  },
+  {
+    "method": "scm_passive",
+    "prediction_bytes_identical": true
+  },
+  {
+    "method": "softimpute",
+    "prediction_bytes_identical": true
+  }
+]

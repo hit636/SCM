@@ -1,0 +1,35 @@
+data:
+  format: retail_panel
+  path: data/favorita_prepared
+  encoding: utf-8-sig
+  date: date
+  entity_columns:
+  - vem_id
+  - merc_id
+  target: daily_quantity
+  missing_dates: zero
+  duplicates: first
+  negative_target: error
+  availability_column: null
+  max_series: 18000
+  min_observed_train_days: 1
+  min_valid_train_days: 49
+  verify_hashes: true
+split:
+  fractions:
+  - 0.7
+  - 0.05
+  - 0.05
+  - 0.2
+  cutoffs:
+  - '2016-03-26'
+  - '2016-06-19'
+  - '2016-09-11'
+forecast:
+  lookback: 56
+  horizon: 28
+  seasonality: 7
+  origin_stride: 28
+  max_origins_per_stage: null
+  train_stride: 7
+  min_valid_target_fraction: 0.8

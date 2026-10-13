@@ -1,0 +1,29 @@
+{
+  "method": "fame_scm_active",
+  "reference": "nn_ei_c",
+  "metric": "rmse",
+  "method_estimate": 2.637498123418552,
+  "reference_estimate": 2.5937522720197563,
+  "delta_method_minus_reference": 0.04374585139879583,
+  "D_reference_minus_method": -0.04374585139879583,
+  "paired_percentile_95ci_D": [
+    -0.12472276652304293,
+    0.026363384197987227
+  ],
+  "centered_two_sided_p_value": 0.21227877212278773,
+  "p_resolution": 9.999000099990002e-05,
+  "paired_percentile_95ci_delta": [
+    -0.02636338419798726,
+    0.12472276652304293
+  ],
+  "relative_error_reduction": -0.016865855645007654,
+  "replicates": 10000,
+  "seed": 42,
+  "entity_groups": 12,
+  "time_blocks": 4,
+  "block_days": 7,
+  "group_component": null,
+  "mask_count": 1,
+  "estimator": "paired two-way entity-group x nonoverlapping target-date block bootstrap; seeds averaged within masks; no origins-as-replicates",
+  "scope": "sampling diagnostic conditional on fitted models and observed masks; no multiple-testing correction"
+}

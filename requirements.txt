@@ -1,0 +1,28 @@
+# Full third-party expert, experiment and validation dependencies.
+# FAME-SCM is imported directly from this checkout; no -e . or local wheel needed.
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.14.1
+scikit-learn==1.5.2
+PyYAML==6.0.2
+torch==2.6.0
+lightgbm==4.5.0
+statsmodels==0.14.4
+psutil==7.2.2
+einops==0.8.2
+xgboost==2.1.4
+prophet==1.1.6
+cmdstanpy==1.2.5
+catboost==1.2.8
+neuralforecast==3.1.2
+chronos-forecasting==1.5.3
+pyarrow==19.0.1
+transformers==4.48.3
+huggingface-hub==0.26.5
+jax==0.4.34
+jaxlib==0.4.34
+ml-dtypes==0.5.1
+movingknots @ git+https://github.com/feng-li/movingknots.git@ced070fa3a19852f3793f6c13f052e01c091dd6c
+black==25.1.0
+build==1.2.2.post1
+pytest==8.3.5

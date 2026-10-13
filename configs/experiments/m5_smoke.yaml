@@ -1,0 +1,128 @@
+extends:
+- ../datasets/m5.yaml
+- ../experts/pool_10.yaml
+seed: 42
+device: cpu
+threads: 4
+result_kind: independent_reimplementation
+scm:
+  rho: 0.4
+  members: 2
+  batches: 2
+  epochs: 3
+  batch_size: 64
+  patience: 20
+  learning_rate: 0.001
+  rank_margin: 0.05
+  lambda_rank: 0.2
+  lambda_factor: 0.0001
+  lambda_encoder: 0.0001
+  ensemble_keep_probability: 0.85
+  sd_ddof: 1
+  mad_multiplier: 1.0
+  scale_floor: 0.1
+  alpha: 1.0
+  beta: 0.5
+  zeta: 0.1
+teacher:
+  tau: 0.3
+  eta: 0.5
+  nu: 0.05
+router:
+  epochs: 4
+  patience: 2
+  batch_size: 64
+  learning_rate: 0.001
+  dropout: 0.1
+  prediction_loss: mse
+  lambda_pred: 1.0
+  lambda_teacher: 1.0
+  lambda_balance: 0.01
+  lambda_cost: 0.01
+  r: 2
+  threshold: 0.05
+  calibration_thresholds:
+  - 0.0
+  - 0.05
+  - 0.1
+baselines:
+  methods:
+  - lightgbm
+  - full_observation
+  - random_partial
+  - softimpute
+  - imc
+  - independent_lgbm
+  - fformpp_b
+  - pmf_a
+  - scm_passive
+  - fame_scm_active
+  epochs: 3
+  neighbors: 5
+  rank: 4
+  softimpute_lambda: 0.1
+  fformpp_steps: 2
+  fformpp_features: 2
+  fformpp_samples: 2
+  pmf_latent_dim: 3
+evaluation:
+  hidden_audit: true
+  mask_seeds:
+  - 0
+  neural_seeds:
+  - 0
+  primary_metric: wape
+experts:
+  names:
+  - sarima
+  - ets
+  - prophet
+  - tsb
+  - linear
+  - xgboost
+  - lightgbm
+  - dlinear
+  - timemixer
+  - timesnet
+  anchor: lightgbm
+  tree_estimators: 20
+  neural_epochs: 1
+  batch_size: 64
+  learning_rate: 0.001
+  max_train_windows: 128
+  sarima_maxiter: 5
+  d_model: 16
+  d_ff: 32
+  e_layers: 1
+  cost_weights:
+    sarima: 0.8
+    ets: 0.8
+    prophet: 1.5
+    tsb: 0.3
+    linear: 0.6
+    xgboost: 1.1
+    lightgbm: 1.0
+    dlinear: 2.0
+    timemixer: 3.6
+    timesnet: 4.1
+  min_history:
+    lightgbm: 15
+    linear: 15
+    xgboost: 15
+    tsb: 15
+    sarima: 14
+    ets: 14
+    prophet: 28
+    dlinear: 56
+    timemixer: 56
+    timesnet: 56
+data:
+  path: data/m5_prepared
+  max_series: 32
+forecast:
+  max_origins_per_stage: 2
+cost_profiling:
+  enabled: true
+  series: 2
+  repeats: 1
+output: runs/m5_smoke

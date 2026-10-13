@@ -1,0 +1,528 @@
+* Getting build dependencies for sdist...
+running egg_info
+writing fame_scm.egg-info/PKG-INFO
+writing dependency_links to fame_scm.egg-info/dependency_links.txt
+writing entry points to fame_scm.egg-info/entry_points.txt
+writing requirements to fame_scm.egg-info/requires.txt
+writing top-level names to fame_scm.egg-info/top_level.txt
+reading manifest file 'fame_scm.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+adding license file 'THIRD_PARTY.md'
+writing manifest file 'fame_scm.egg-info/SOURCES.txt'
+* Building sdist...
+running sdist
+running egg_info
+writing fame_scm.egg-info/PKG-INFO
+writing dependency_links to fame_scm.egg-info/dependency_links.txt
+writing entry points to fame_scm.egg-info/entry_points.txt
+writing requirements to fame_scm.egg-info/requires.txt
+writing top-level names to fame_scm.egg-info/top_level.txt
+reading manifest file 'fame_scm.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+adding license file 'THIRD_PARTY.md'
+writing manifest file 'fame_scm.egg-info/SOURCES.txt'
+running check
+creating fame_scm-2.2.0
+creating fame_scm-2.2.0/.github/workflows
+creating fame_scm-2.2.0/configs/datasets
+creating fame_scm-2.2.0/configs/experiments
+creating fame_scm-2.2.0/configs/experts
+creating fame_scm-2.2.0/data
+creating fame_scm-2.2.0/docs
+creating fame_scm-2.2.0/docs/verification
+creating fame_scm-2.2.0/fame_scm
+creating fame_scm-2.2.0/fame_scm.egg-info
+creating fame_scm-2.2.0/fame_scm/acquisition
+creating fame_scm-2.2.0/fame_scm/baselines
+creating fame_scm-2.2.0/fame_scm/competence
+creating fame_scm-2.2.0/fame_scm/datasets
+creating fame_scm-2.2.0/fame_scm/evaluation
+creating fame_scm-2.2.0/fame_scm/experts
+creating fame_scm-2.2.0/fame_scm/fingerprints
+creating fame_scm-2.2.0/fame_scm/orchestration
+creating fame_scm-2.2.0/fame_scm/routing
+creating fame_scm-2.2.0/fame_scm/vendor
+creating fame_scm-2.2.0/fame_scm/vendor/tslib
+creating fame_scm-2.2.0/fame_scm/vendor/tslib/layers
+creating fame_scm-2.2.0/fame_scm/vendor/tslib/models
+creating fame_scm-2.2.0/metadata
+creating fame_scm-2.2.0/scripts
+creating fame_scm-2.2.0/tests
+copying files to fame_scm-2.2.0...
+copying .gitignore -> fame_scm-2.2.0
+copying CITATION.cff -> fame_scm-2.2.0
+copying CONTRIBUTING.md -> fame_scm-2.2.0
+copying LICENSE -> fame_scm-2.2.0
+copying MANIFEST.in -> fame_scm-2.2.0
+copying README.md -> fame_scm-2.2.0
+copying THIRD_PARTY.md -> fame_scm-2.2.0
+copying example_api.py -> fame_scm-2.2.0
+copying pyproject.toml -> fame_scm-2.2.0
+copying requirements.txt -> fame_scm-2.2.0
+copying run.py -> fame_scm-2.2.0
+copying 使用说明.md -> fame_scm-2.2.0
+copying .github/workflows/ci.yml -> fame_scm-2.2.0/.github/workflows
+copying configs/datasets/electricity.yaml -> fame_scm-2.2.0/configs/datasets
+copying configs/datasets/favorita.yaml -> fame_scm-2.2.0/configs/datasets
+copying configs/datasets/m5.yaml -> fame_scm-2.2.0/configs/datasets
+copying configs/datasets/snbc.yaml -> fame_scm-2.2.0/configs/datasets
+copying configs/datasets/traffic.yaml -> fame_scm-2.2.0/configs/datasets
+copying configs/experiments/electricity_main.yaml -> fame_scm-2.2.0/configs/experiments
+copying configs/experiments/electricity_smoke.yaml -> fame_scm-2.2.0/configs/experiments
+copying configs/experiments/favorita_20.yaml -> fame_scm-2.2.0/configs/experiments
+copying configs/experiments/favorita_main.yaml -> fame_scm-2.2.0/configs/experiments
+copying configs/experiments/favorita_smoke.yaml -> fame_scm-2.2.0/configs/experiments
+copying configs/experiments/inventory_policy.yaml -> fame_scm-2.2.0/configs/experiments
+copying configs/experiments/m5_20.yaml -> fame_scm-2.2.0/configs/experiments
+copying configs/experiments/m5_main.yaml -> fame_scm-2.2.0/configs/experiments
+copying configs/experiments/m5_smoke.yaml -> fame_scm-2.2.0/configs/experiments
+copying configs/experiments/quick_demo.yaml -> fame_scm-2.2.0/configs/experiments
+copying configs/experiments/snbc_main.yaml -> fame_scm-2.2.0/configs/experiments
+copying configs/experiments/snbc_smoke.yaml -> fame_scm-2.2.0/configs/experiments
+copying configs/experiments/ten_experts_smoke.yaml -> fame_scm-2.2.0/configs/experiments
+copying configs/experiments/traffic_main.yaml -> fame_scm-2.2.0/configs/experiments
+copying configs/experiments/traffic_smoke.yaml -> fame_scm-2.2.0/configs/experiments
+copying configs/experts/pool_10.yaml -> fame_scm-2.2.0/configs/experts
+copying configs/experts/pool_15.yaml -> fame_scm-2.2.0/configs/experts
+copying configs/experts/pool_20.yaml -> fame_scm-2.2.0/configs/experts
+copying configs/experts/pool_40.yaml -> fame_scm-2.2.0/configs/experts
+copying configs/experts/pool_5.yaml -> fame_scm-2.2.0/configs/experts
+copying data/README.md -> fame_scm-2.2.0/data
+copying data/daily_sales_format_example.csv -> fame_scm-2.2.0/data
+copying docs/CHANGELOG.md -> fame_scm-2.2.0/docs
+copying docs/data_formats.md -> fame_scm-2.2.0/docs
+copying docs/experiments.md -> fame_scm-2.2.0/docs
+copying docs/methodology.md -> fame_scm-2.2.0/docs
+copying docs/output_schema.md -> fame_scm-2.2.0/docs
+copying docs/paper_alignment.md -> fame_scm-2.2.0/docs
+copying docs/reproduction.md -> fame_scm-2.2.0/docs
+copying docs/reviewer_response.md -> fame_scm-2.2.0/docs
+copying docs/validation.json -> fame_scm-2.2.0/docs
+copying docs/validation.md -> fame_scm-2.2.0/docs
+copying docs/verification/backend_checks.json -> fame_scm-2.2.0/docs/verification
+copying docs/verification/bilingual_readme_21.json -> fame_scm-2.2.0/docs/verification
+copying docs/verification/daily_hourly_integration.json -> fame_scm-2.2.0/docs/verification
+copying docs/verification/distribution_check.json -> fame_scm-2.2.0/docs/verification
+copying docs/verification/distributions_21.json -> fame_scm-2.2.0/docs/verification
+copying docs/verification/environment_imports.json -> fame_scm-2.2.0/docs/verification
+copying docs/verification/extended_integration.json -> fame_scm-2.2.0/docs/verification
+copying docs/verification/insertion_integration.json -> fame_scm-2.2.0/docs/verification
+copying docs/verification/paired_bootstrap.json -> fame_scm-2.2.0/docs/verification
+copying docs/verification/repository.json -> fame_scm-2.2.0/docs/verification
+copying docs/verification/repository_21.json -> fame_scm-2.2.0/docs/verification
+copying docs/verification/retail_integration.json -> fame_scm-2.2.0/docs/verification
+copying docs/verification/revision_integration.json -> fame_scm-2.2.0/docs/verification
+copying docs/verification/revision_integration_21.json -> fame_scm-2.2.0/docs/verification
+copying docs/verification/source_api_21.json -> fame_scm-2.2.0/docs/verification
+copying fame_scm/__init__.py -> fame_scm-2.2.0/fame_scm
+copying fame_scm/__main__.py -> fame_scm-2.2.0/fame_scm
+copying fame_scm/api.py -> fame_scm-2.2.0/fame_scm
+copying fame_scm/checkpoints.py -> fame_scm-2.2.0/fame_scm
+copying fame_scm/cli.py -> fame_scm-2.2.0/fame_scm
+copying fame_scm/contracts.py -> fame_scm-2.2.0/fame_scm
+copying fame_scm/doctor.py -> fame_scm-2.2.0/fame_scm
+copying fame_scm/reporting.py -> fame_scm-2.2.0/fame_scm
+copying fame_scm/reproduction.py -> fame_scm-2.2.0/fame_scm
+copying fame_scm/settings.py -> fame_scm-2.2.0/fame_scm
+copying fame_scm.egg-info/PKG-INFO -> fame_scm-2.2.0/fame_scm.egg-info
+copying fame_scm.egg-info/SOURCES.txt -> fame_scm-2.2.0/fame_scm.egg-info
+copying fame_scm.egg-info/dependency_links.txt -> fame_scm-2.2.0/fame_scm.egg-info
+copying fame_scm.egg-info/entry_points.txt -> fame_scm-2.2.0/fame_scm.egg-info
+copying fame_scm.egg-info/requires.txt -> fame_scm-2.2.0/fame_scm.egg-info
+copying fame_scm.egg-info/top_level.txt -> fame_scm-2.2.0/fame_scm.egg-info
+copying fame_scm/acquisition/__init__.py -> fame_scm-2.2.0/fame_scm/acquisition
+copying fame_scm/acquisition/evidence.py -> fame_scm-2.2.0/fame_scm/acquisition
+copying fame_scm/acquisition/scores.py -> fame_scm-2.2.0/fame_scm/acquisition
+copying fame_scm/baselines/__init__.py -> fame_scm-2.2.0/fame_scm/baselines
+copying fame_scm/baselines/neural.py -> fame_scm-2.2.0/fame_scm/baselines
+copying fame_scm/baselines/recovery.py -> fame_scm-2.2.0/fame_scm/baselines
+copying fame_scm/baselines/status.py -> fame_scm-2.2.0/fame_scm/baselines
+copying fame_scm/competence/__init__.py -> fame_scm-2.2.0/fame_scm/competence
+copying fame_scm/competence/calibration.py -> fame_scm-2.2.0/fame_scm/competence
+copying fame_scm/competence/insertion.py -> fame_scm-2.2.0/fame_scm/competence
+copying fame_scm/competence/scaling.py -> fame_scm-2.2.0/fame_scm/competence
+copying fame_scm/competence/torch_models.py -> fame_scm-2.2.0/fame_scm/competence
+copying fame_scm/competence/torch_objectives.py -> fame_scm-2.2.0/fame_scm/competence
+copying fame_scm/competence/trainers.py -> fame_scm-2.2.0/fame_scm/competence
+copying fame_scm/datasets/__init__.py -> fame_scm-2.2.0/fame_scm/datasets
+copying fame_scm/datasets/data.py -> fame_scm-2.2.0/fame_scm/datasets
+copying fame_scm/datasets/loader.py -> fame_scm-2.2.0/fame_scm/datasets
+copying fame_scm/datasets/retail.py -> fame_scm-2.2.0/fame_scm/datasets
+copying fame_scm/datasets/snbc.py -> fame_scm-2.2.0/fame_scm/datasets
+copying fame_scm/datasets/temporal.py -> fame_scm-2.2.0/fame_scm/datasets
+copying fame_scm/datasets/wide.py -> fame_scm-2.2.0/fame_scm/datasets
+copying fame_scm/evaluation/__init__.py -> fame_scm-2.2.0/fame_scm/evaluation
+copying fame_scm/evaluation/audit.py -> fame_scm-2.2.0/fame_scm/evaluation
+copying fame_scm/evaluation/costs.py -> fame_scm-2.2.0/fame_scm/evaluation
+copying fame_scm/evaluation/inventory.py -> fame_scm-2.2.0/fame_scm/evaluation
+copying fame_scm/evaluation/metrics.py -> fame_scm-2.2.0/fame_scm/evaluation
+copying fame_scm/evaluation/resources.py -> fame_scm-2.2.0/fame_scm/evaluation
+copying fame_scm/evaluation/statistics.py -> fame_scm-2.2.0/fame_scm/evaluation
+copying fame_scm/evaluation/tables.py -> fame_scm-2.2.0/fame_scm/evaluation
+copying fame_scm/evaluation/theory.py -> fame_scm-2.2.0/fame_scm/evaluation
+copying fame_scm/experts/__init__.py -> fame_scm-2.2.0/fame_scm/experts
+copying fame_scm/experts/extended_experts.py -> fame_scm-2.2.0/fame_scm/experts
+copying fame_scm/experts/forecast_experts.py -> fame_scm-2.2.0/fame_scm/experts
+copying fame_scm/experts/pools.py -> fame_scm-2.2.0/fame_scm/experts
+copying fame_scm/experts/registry.py -> fame_scm-2.2.0/fame_scm/experts
+copying fame_scm/fingerprints/__init__.py -> fame_scm-2.2.0/fame_scm/fingerprints
+copying fame_scm/fingerprints/features.py -> fame_scm-2.2.0/fame_scm/fingerprints
+copying fame_scm/orchestration/__init__.py -> fame_scm-2.2.0/fame_scm/orchestration
+copying fame_scm/orchestration/calibration.py -> fame_scm-2.2.0/fame_scm/orchestration
+copying fame_scm/orchestration/consumers.py -> fame_scm-2.2.0/fame_scm/orchestration
+copying fame_scm/orchestration/execution.py -> fame_scm-2.2.0/fame_scm/orchestration
+copying fame_scm/orchestration/experiment.py -> fame_scm-2.2.0/fame_scm/orchestration
+copying fame_scm/orchestration/screening.py -> fame_scm-2.2.0/fame_scm/orchestration
+copying fame_scm/orchestration/smoke.py -> fame_scm-2.2.0/fame_scm/orchestration
+copying fame_scm/orchestration/suite.py -> fame_scm-2.2.0/fame_scm/orchestration
+copying fame_scm/orchestration/timed.py -> fame_scm-2.2.0/fame_scm/orchestration
+copying fame_scm/orchestration/transfer.py -> fame_scm-2.2.0/fame_scm/orchestration
+copying fame_scm/routing/__init__.py -> fame_scm-2.2.0/fame_scm/routing
+copying fame_scm/routing/consumers.py -> fame_scm-2.2.0/fame_scm/routing
+copying fame_scm/routing/gate.py -> fame_scm-2.2.0/fame_scm/routing
+copying fame_scm/routing/inference.py -> fame_scm-2.2.0/fame_scm/routing
+copying fame_scm/routing/teacher.py -> fame_scm-2.2.0/fame_scm/routing
+copying fame_scm/routing/training.py -> fame_scm-2.2.0/fame_scm/routing
+copying fame_scm/vendor/__init__.py -> fame_scm-2.2.0/fame_scm/vendor
+copying fame_scm/vendor/tslib/LICENSE -> fame_scm-2.2.0/fame_scm/vendor/tslib
+copying fame_scm/vendor/tslib/__init__.py -> fame_scm-2.2.0/fame_scm/vendor/tslib
+copying fame_scm/vendor/tslib/layers/Autoformer_EncDec.py -> fame_scm-2.2.0/fame_scm/vendor/tslib/layers
+copying fame_scm/vendor/tslib/layers/Conv_Blocks.py -> fame_scm-2.2.0/fame_scm/vendor/tslib/layers
+copying fame_scm/vendor/tslib/layers/Embed.py -> fame_scm-2.2.0/fame_scm/vendor/tslib/layers
+copying fame_scm/vendor/tslib/layers/StandardNorm.py -> fame_scm-2.2.0/fame_scm/vendor/tslib/layers
+copying fame_scm/vendor/tslib/layers/__init__.py -> fame_scm-2.2.0/fame_scm/vendor/tslib/layers
+copying fame_scm/vendor/tslib/models/DLinear.py -> fame_scm-2.2.0/fame_scm/vendor/tslib/models
+copying fame_scm/vendor/tslib/models/TimeMixer.py -> fame_scm-2.2.0/fame_scm/vendor/tslib/models
+copying fame_scm/vendor/tslib/models/TimesNet.py -> fame_scm-2.2.0/fame_scm/vendor/tslib/models
+copying fame_scm/vendor/tslib/models/__init__.py -> fame_scm-2.2.0/fame_scm/vendor/tslib/models
+copying metadata/experiment_matrix.json -> fame_scm-2.2.0/metadata
+copying metadata/paper_sources.json -> fame_scm-2.2.0/metadata
+copying metadata/paper_targets.csv -> fame_scm-2.2.0/metadata
+copying metadata/revision_manifest.json -> fame_scm-2.2.0/metadata
+copying metadata/tested_environment.json -> fame_scm-2.2.0/metadata
+copying scripts/check_docs.py -> fame_scm-2.2.0/scripts
+copying scripts/check_fformpp_env.py -> fame_scm-2.2.0/scripts
+copying scripts/check_repository.py -> fame_scm-2.2.0/scripts
+copying scripts/extended_suite.py -> fame_scm-2.2.0/scripts
+copying scripts/run_api.sh -> fame_scm-2.2.0/scripts
+copying scripts/run_datasets.py -> fame_scm-2.2.0/scripts
+copying scripts/test.py -> fame_scm-2.2.0/scripts
+copying scripts/validate_extended.py -> fame_scm-2.2.0/scripts
+copying scripts/validate_insertion.py -> fame_scm-2.2.0/scripts
+copying scripts/validate_retail.py -> fame_scm-2.2.0/scripts
+copying scripts/validate_revision.py -> fame_scm-2.2.0/scripts
+copying scripts/validate_timeseries.py -> fame_scm-2.2.0/scripts
+copying tests/retail_fixtures.py -> fame_scm-2.2.0/tests
+copying tests/test_api.py -> fame_scm-2.2.0/tests
+copying tests/test_core.py -> fame_scm-2.2.0/tests
+copying tests/test_deployment.py -> fame_scm-2.2.0/tests
+copying tests/test_paper_contracts.py -> fame_scm-2.2.0/tests
+copying tests/test_retail.py -> fame_scm-2.2.0/tests
+copying tests/test_revision.py -> fame_scm-2.2.0/tests
+copying tests/test_timeseries.py -> fame_scm-2.2.0/tests
+copying tests/test_training.py -> fame_scm-2.2.0/tests
+copying fame_scm.egg-info/SOURCES.txt -> fame_scm-2.2.0/fame_scm.egg-info
+Writing fame_scm-2.2.0/setup.cfg
+Creating tar archive
+removing 'fame_scm-2.2.0' (and everything under it)
+* Building wheel from sdist
+* Getting build dependencies for wheel...
+running egg_info
+writing fame_scm.egg-info/PKG-INFO
+writing dependency_links to fame_scm.egg-info/dependency_links.txt
+writing entry points to fame_scm.egg-info/entry_points.txt
+writing requirements to fame_scm.egg-info/requires.txt
+writing top-level names to fame_scm.egg-info/top_level.txt
+reading manifest file 'fame_scm.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+adding license file 'THIRD_PARTY.md'
+writing manifest file 'fame_scm.egg-info/SOURCES.txt'
+* Building wheel...
+running bdist_wheel
+running build
+running build_py
+creating build/lib/fame_scm
+copying fame_scm/checkpoints.py -> build/lib/fame_scm
+copying fame_scm/api.py -> build/lib/fame_scm
+copying fame_scm/__main__.py -> build/lib/fame_scm
+copying fame_scm/__init__.py -> build/lib/fame_scm
+copying fame_scm/reproduction.py -> build/lib/fame_scm
+copying fame_scm/doctor.py -> build/lib/fame_scm
+copying fame_scm/contracts.py -> build/lib/fame_scm
+copying fame_scm/settings.py -> build/lib/fame_scm
+copying fame_scm/cli.py -> build/lib/fame_scm
+copying fame_scm/reporting.py -> build/lib/fame_scm
+creating build/lib/fame_scm/routing
+copying fame_scm/routing/inference.py -> build/lib/fame_scm/routing
+copying fame_scm/routing/consumers.py -> build/lib/fame_scm/routing
+copying fame_scm/routing/__init__.py -> build/lib/fame_scm/routing
+copying fame_scm/routing/teacher.py -> build/lib/fame_scm/routing
+copying fame_scm/routing/gate.py -> build/lib/fame_scm/routing
+copying fame_scm/routing/training.py -> build/lib/fame_scm/routing
+creating build/lib/fame_scm/orchestration
+copying fame_scm/orchestration/transfer.py -> build/lib/fame_scm/orchestration
+copying fame_scm/orchestration/smoke.py -> build/lib/fame_scm/orchestration
+copying fame_scm/orchestration/consumers.py -> build/lib/fame_scm/orchestration
+copying fame_scm/orchestration/__init__.py -> build/lib/fame_scm/orchestration
+copying fame_scm/orchestration/screening.py -> build/lib/fame_scm/orchestration
+copying fame_scm/orchestration/timed.py -> build/lib/fame_scm/orchestration
+copying fame_scm/orchestration/experiment.py -> build/lib/fame_scm/orchestration
+copying fame_scm/orchestration/suite.py -> build/lib/fame_scm/orchestration
+copying fame_scm/orchestration/calibration.py -> build/lib/fame_scm/orchestration
+copying fame_scm/orchestration/execution.py -> build/lib/fame_scm/orchestration
+creating build/lib/fame_scm/baselines
+copying fame_scm/baselines/neural.py -> build/lib/fame_scm/baselines
+copying fame_scm/baselines/__init__.py -> build/lib/fame_scm/baselines
+copying fame_scm/baselines/recovery.py -> build/lib/fame_scm/baselines
+copying fame_scm/baselines/status.py -> build/lib/fame_scm/baselines
+creating build/lib/fame_scm/vendor
+copying fame_scm/vendor/__init__.py -> build/lib/fame_scm/vendor
+creating build/lib/fame_scm/datasets
+copying fame_scm/datasets/__init__.py -> build/lib/fame_scm/datasets
+copying fame_scm/datasets/snbc.py -> build/lib/fame_scm/datasets
+copying fame_scm/datasets/wide.py -> build/lib/fame_scm/datasets
+copying fame_scm/datasets/temporal.py -> build/lib/fame_scm/datasets
+copying fame_scm/datasets/data.py -> build/lib/fame_scm/datasets
+copying fame_scm/datasets/loader.py -> build/lib/fame_scm/datasets
+copying fame_scm/datasets/retail.py -> build/lib/fame_scm/datasets
+creating build/lib/fame_scm/acquisition
+copying fame_scm/acquisition/__init__.py -> build/lib/fame_scm/acquisition
+copying fame_scm/acquisition/evidence.py -> build/lib/fame_scm/acquisition
+copying fame_scm/acquisition/scores.py -> build/lib/fame_scm/acquisition
+creating build/lib/fame_scm/experts
+copying fame_scm/experts/extended_experts.py -> build/lib/fame_scm/experts
+copying fame_scm/experts/pools.py -> build/lib/fame_scm/experts
+copying fame_scm/experts/__init__.py -> build/lib/fame_scm/experts
+copying fame_scm/experts/forecast_experts.py -> build/lib/fame_scm/experts
+copying fame_scm/experts/registry.py -> build/lib/fame_scm/experts
+creating build/lib/fame_scm/fingerprints
+copying fame_scm/fingerprints/__init__.py -> build/lib/fame_scm/fingerprints
+copying fame_scm/fingerprints/features.py -> build/lib/fame_scm/fingerprints
+creating build/lib/fame_scm/evaluation
+copying fame_scm/evaluation/theory.py -> build/lib/fame_scm/evaluation
+copying fame_scm/evaluation/resources.py -> build/lib/fame_scm/evaluation
+copying fame_scm/evaluation/audit.py -> build/lib/fame_scm/evaluation
+copying fame_scm/evaluation/inventory.py -> build/lib/fame_scm/evaluation
+copying fame_scm/evaluation/statistics.py -> build/lib/fame_scm/evaluation
+copying fame_scm/evaluation/__init__.py -> build/lib/fame_scm/evaluation
+copying fame_scm/evaluation/tables.py -> build/lib/fame_scm/evaluation
+copying fame_scm/evaluation/metrics.py -> build/lib/fame_scm/evaluation
+copying fame_scm/evaluation/costs.py -> build/lib/fame_scm/evaluation
+creating build/lib/fame_scm/competence
+copying fame_scm/competence/scaling.py -> build/lib/fame_scm/competence
+copying fame_scm/competence/__init__.py -> build/lib/fame_scm/competence
+copying fame_scm/competence/trainers.py -> build/lib/fame_scm/competence
+copying fame_scm/competence/torch_objectives.py -> build/lib/fame_scm/competence
+copying fame_scm/competence/calibration.py -> build/lib/fame_scm/competence
+copying fame_scm/competence/insertion.py -> build/lib/fame_scm/competence
+copying fame_scm/competence/torch_models.py -> build/lib/fame_scm/competence
+creating build/lib/fame_scm/vendor/tslib
+copying fame_scm/vendor/tslib/__init__.py -> build/lib/fame_scm/vendor/tslib
+creating build/lib/fame_scm/vendor/tslib/models
+copying fame_scm/vendor/tslib/models/TimesNet.py -> build/lib/fame_scm/vendor/tslib/models
+copying fame_scm/vendor/tslib/models/__init__.py -> build/lib/fame_scm/vendor/tslib/models
+copying fame_scm/vendor/tslib/models/DLinear.py -> build/lib/fame_scm/vendor/tslib/models
+copying fame_scm/vendor/tslib/models/TimeMixer.py -> build/lib/fame_scm/vendor/tslib/models
+creating build/lib/fame_scm/vendor/tslib/layers
+copying fame_scm/vendor/tslib/layers/__init__.py -> build/lib/fame_scm/vendor/tslib/layers
+copying fame_scm/vendor/tslib/layers/Conv_Blocks.py -> build/lib/fame_scm/vendor/tslib/layers
+copying fame_scm/vendor/tslib/layers/Autoformer_EncDec.py -> build/lib/fame_scm/vendor/tslib/layers
+copying fame_scm/vendor/tslib/layers/Embed.py -> build/lib/fame_scm/vendor/tslib/layers
+copying fame_scm/vendor/tslib/layers/StandardNorm.py -> build/lib/fame_scm/vendor/tslib/layers
+running egg_info
+writing fame_scm.egg-info/PKG-INFO
+writing dependency_links to fame_scm.egg-info/dependency_links.txt
+writing entry points to fame_scm.egg-info/entry_points.txt
+writing requirements to fame_scm.egg-info/requires.txt
+writing top-level names to fame_scm.egg-info/top_level.txt
+reading manifest file 'fame_scm.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+adding license file 'THIRD_PARTY.md'
+writing manifest file 'fame_scm.egg-info/SOURCES.txt'
+copying fame_scm/vendor/tslib/LICENSE -> build/lib/fame_scm/vendor/tslib
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/fame_scm
+copying build/lib/fame_scm/checkpoints.py -> build/bdist.linux-x86_64/wheel/./fame_scm
+creating build/bdist.linux-x86_64/wheel/fame_scm/routing
+copying build/lib/fame_scm/routing/inference.py -> build/bdist.linux-x86_64/wheel/./fame_scm/routing
+copying build/lib/fame_scm/routing/consumers.py -> build/bdist.linux-x86_64/wheel/./fame_scm/routing
+copying build/lib/fame_scm/routing/__init__.py -> build/bdist.linux-x86_64/wheel/./fame_scm/routing
+copying build/lib/fame_scm/routing/teacher.py -> build/bdist.linux-x86_64/wheel/./fame_scm/routing
+copying build/lib/fame_scm/routing/gate.py -> build/bdist.linux-x86_64/wheel/./fame_scm/routing
+copying build/lib/fame_scm/routing/training.py -> build/bdist.linux-x86_64/wheel/./fame_scm/routing
+creating build/bdist.linux-x86_64/wheel/fame_scm/orchestration
+copying build/lib/fame_scm/orchestration/transfer.py -> build/bdist.linux-x86_64/wheel/./fame_scm/orchestration
+copying build/lib/fame_scm/orchestration/smoke.py -> build/bdist.linux-x86_64/wheel/./fame_scm/orchestration
+copying build/lib/fame_scm/orchestration/consumers.py -> build/bdist.linux-x86_64/wheel/./fame_scm/orchestration
+copying build/lib/fame_scm/orchestration/__init__.py -> build/bdist.linux-x86_64/wheel/./fame_scm/orchestration
+copying build/lib/fame_scm/orchestration/screening.py -> build/bdist.linux-x86_64/wheel/./fame_scm/orchestration
+copying build/lib/fame_scm/orchestration/timed.py -> build/bdist.linux-x86_64/wheel/./fame_scm/orchestration
+copying build/lib/fame_scm/orchestration/experiment.py -> build/bdist.linux-x86_64/wheel/./fame_scm/orchestration
+copying build/lib/fame_scm/orchestration/suite.py -> build/bdist.linux-x86_64/wheel/./fame_scm/orchestration
+copying build/lib/fame_scm/orchestration/calibration.py -> build/bdist.linux-x86_64/wheel/./fame_scm/orchestration
+copying build/lib/fame_scm/orchestration/execution.py -> build/bdist.linux-x86_64/wheel/./fame_scm/orchestration
+creating build/bdist.linux-x86_64/wheel/fame_scm/baselines
+copying build/lib/fame_scm/baselines/neural.py -> build/bdist.linux-x86_64/wheel/./fame_scm/baselines
+copying build/lib/fame_scm/baselines/__init__.py -> build/bdist.linux-x86_64/wheel/./fame_scm/baselines
+copying build/lib/fame_scm/baselines/recovery.py -> build/bdist.linux-x86_64/wheel/./fame_scm/baselines
+copying build/lib/fame_scm/baselines/status.py -> build/bdist.linux-x86_64/wheel/./fame_scm/baselines
+copying build/lib/fame_scm/api.py -> build/bdist.linux-x86_64/wheel/./fame_scm
+creating build/bdist.linux-x86_64/wheel/fame_scm/vendor
+creating build/bdist.linux-x86_64/wheel/fame_scm/vendor/tslib
+creating build/bdist.linux-x86_64/wheel/fame_scm/vendor/tslib/models
+copying build/lib/fame_scm/vendor/tslib/models/TimesNet.py -> build/bdist.linux-x86_64/wheel/./fame_scm/vendor/tslib/models
+copying build/lib/fame_scm/vendor/tslib/models/__init__.py -> build/bdist.linux-x86_64/wheel/./fame_scm/vendor/tslib/models
+copying build/lib/fame_scm/vendor/tslib/models/DLinear.py -> build/bdist.linux-x86_64/wheel/./fame_scm/vendor/tslib/models
+copying build/lib/fame_scm/vendor/tslib/models/TimeMixer.py -> build/bdist.linux-x86_64/wheel/./fame_scm/vendor/tslib/models
+copying build/lib/fame_scm/vendor/tslib/__init__.py -> build/bdist.linux-x86_64/wheel/./fame_scm/vendor/tslib
+creating build/bdist.linux-x86_64/wheel/fame_scm/vendor/tslib/layers
+copying build/lib/fame_scm/vendor/tslib/layers/__init__.py -> build/bdist.linux-x86_64/wheel/./fame_scm/vendor/tslib/layers
+copying build/lib/fame_scm/vendor/tslib/layers/Conv_Blocks.py -> build/bdist.linux-x86_64/wheel/./fame_scm/vendor/tslib/layers
+copying build/lib/fame_scm/vendor/tslib/layers/Autoformer_EncDec.py -> build/bdist.linux-x86_64/wheel/./fame_scm/vendor/tslib/layers
+copying build/lib/fame_scm/vendor/tslib/layers/Embed.py -> build/bdist.linux-x86_64/wheel/./fame_scm/vendor/tslib/layers
+copying build/lib/fame_scm/vendor/tslib/layers/StandardNorm.py -> build/bdist.linux-x86_64/wheel/./fame_scm/vendor/tslib/layers
+copying build/lib/fame_scm/vendor/tslib/LICENSE -> build/bdist.linux-x86_64/wheel/./fame_scm/vendor/tslib
+copying build/lib/fame_scm/vendor/__init__.py -> build/bdist.linux-x86_64/wheel/./fame_scm/vendor
+creating build/bdist.linux-x86_64/wheel/fame_scm/datasets
+copying build/lib/fame_scm/datasets/__init__.py -> build/bdist.linux-x86_64/wheel/./fame_scm/datasets
+copying build/lib/fame_scm/datasets/snbc.py -> build/bdist.linux-x86_64/wheel/./fame_scm/datasets
+copying build/lib/fame_scm/datasets/wide.py -> build/bdist.linux-x86_64/wheel/./fame_scm/datasets
+copying build/lib/fame_scm/datasets/temporal.py -> build/bdist.linux-x86_64/wheel/./fame_scm/datasets
+copying build/lib/fame_scm/datasets/data.py -> build/bdist.linux-x86_64/wheel/./fame_scm/datasets
+copying build/lib/fame_scm/datasets/loader.py -> build/bdist.linux-x86_64/wheel/./fame_scm/datasets
+copying build/lib/fame_scm/datasets/retail.py -> build/bdist.linux-x86_64/wheel/./fame_scm/datasets
+creating build/bdist.linux-x86_64/wheel/fame_scm/acquisition
+copying build/lib/fame_scm/acquisition/__init__.py -> build/bdist.linux-x86_64/wheel/./fame_scm/acquisition
+copying build/lib/fame_scm/acquisition/evidence.py -> build/bdist.linux-x86_64/wheel/./fame_scm/acquisition
+copying build/lib/fame_scm/acquisition/scores.py -> build/bdist.linux-x86_64/wheel/./fame_scm/acquisition
+copying build/lib/fame_scm/__main__.py -> build/bdist.linux-x86_64/wheel/./fame_scm
+creating build/bdist.linux-x86_64/wheel/fame_scm/experts
+copying build/lib/fame_scm/experts/extended_experts.py -> build/bdist.linux-x86_64/wheel/./fame_scm/experts
+copying build/lib/fame_scm/experts/pools.py -> build/bdist.linux-x86_64/wheel/./fame_scm/experts
+copying build/lib/fame_scm/experts/__init__.py -> build/bdist.linux-x86_64/wheel/./fame_scm/experts
+copying build/lib/fame_scm/experts/forecast_experts.py -> build/bdist.linux-x86_64/wheel/./fame_scm/experts
+copying build/lib/fame_scm/experts/registry.py -> build/bdist.linux-x86_64/wheel/./fame_scm/experts
+copying build/lib/fame_scm/__init__.py -> build/bdist.linux-x86_64/wheel/./fame_scm
+creating build/bdist.linux-x86_64/wheel/fame_scm/fingerprints
+copying build/lib/fame_scm/fingerprints/__init__.py -> build/bdist.linux-x86_64/wheel/./fame_scm/fingerprints
+copying build/lib/fame_scm/fingerprints/features.py -> build/bdist.linux-x86_64/wheel/./fame_scm/fingerprints
+copying build/lib/fame_scm/reproduction.py -> build/bdist.linux-x86_64/wheel/./fame_scm
+copying build/lib/fame_scm/doctor.py -> build/bdist.linux-x86_64/wheel/./fame_scm
+creating build/bdist.linux-x86_64/wheel/fame_scm/evaluation
+copying build/lib/fame_scm/evaluation/theory.py -> build/bdist.linux-x86_64/wheel/./fame_scm/evaluation
+copying build/lib/fame_scm/evaluation/resources.py -> build/bdist.linux-x86_64/wheel/./fame_scm/evaluation
+copying build/lib/fame_scm/evaluation/audit.py -> build/bdist.linux-x86_64/wheel/./fame_scm/evaluation
+copying build/lib/fame_scm/evaluation/inventory.py -> build/bdist.linux-x86_64/wheel/./fame_scm/evaluation
+copying build/lib/fame_scm/evaluation/statistics.py -> build/bdist.linux-x86_64/wheel/./fame_scm/evaluation
+copying build/lib/fame_scm/evaluation/__init__.py -> build/bdist.linux-x86_64/wheel/./fame_scm/evaluation
+copying build/lib/fame_scm/evaluation/tables.py -> build/bdist.linux-x86_64/wheel/./fame_scm/evaluation
+copying build/lib/fame_scm/evaluation/metrics.py -> build/bdist.linux-x86_64/wheel/./fame_scm/evaluation
+copying build/lib/fame_scm/evaluation/costs.py -> build/bdist.linux-x86_64/wheel/./fame_scm/evaluation
+creating build/bdist.linux-x86_64/wheel/fame_scm/competence
+copying build/lib/fame_scm/competence/scaling.py -> build/bdist.linux-x86_64/wheel/./fame_scm/competence
+copying build/lib/fame_scm/competence/__init__.py -> build/bdist.linux-x86_64/wheel/./fame_scm/competence
+copying build/lib/fame_scm/competence/trainers.py -> build/bdist.linux-x86_64/wheel/./fame_scm/competence
+copying build/lib/fame_scm/competence/torch_objectives.py -> build/bdist.linux-x86_64/wheel/./fame_scm/competence
+copying build/lib/fame_scm/competence/calibration.py -> build/bdist.linux-x86_64/wheel/./fame_scm/competence
+copying build/lib/fame_scm/competence/insertion.py -> build/bdist.linux-x86_64/wheel/./fame_scm/competence
+copying build/lib/fame_scm/competence/torch_models.py -> build/bdist.linux-x86_64/wheel/./fame_scm/competence
+copying build/lib/fame_scm/contracts.py -> build/bdist.linux-x86_64/wheel/./fame_scm
+copying build/lib/fame_scm/settings.py -> build/bdist.linux-x86_64/wheel/./fame_scm
+copying build/lib/fame_scm/cli.py -> build/bdist.linux-x86_64/wheel/./fame_scm
+copying build/lib/fame_scm/reporting.py -> build/bdist.linux-x86_64/wheel/./fame_scm
+running install_egg_info
+Copying fame_scm.egg-info to build/bdist.linux-x86_64/wheel/./fame_scm-2.2.0-py3.12.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/fame_scm-2.2.0.dist-info/WHEEL
+creating '/workspace/scratch/da37ab8908fd/work/FAME-SCM/dist/.tmp-wcqhzh2e/fame_scm-2.2.0-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'fame_scm/__init__.py'
+adding 'fame_scm/__main__.py'
+adding 'fame_scm/api.py'
+adding 'fame_scm/checkpoints.py'
+adding 'fame_scm/cli.py'
+adding 'fame_scm/contracts.py'
+adding 'fame_scm/doctor.py'
+adding 'fame_scm/reporting.py'
+adding 'fame_scm/reproduction.py'
+adding 'fame_scm/settings.py'
+adding 'fame_scm/acquisition/__init__.py'
+adding 'fame_scm/acquisition/evidence.py'
+adding 'fame_scm/acquisition/scores.py'
+adding 'fame_scm/baselines/__init__.py'
+adding 'fame_scm/baselines/neural.py'
+adding 'fame_scm/baselines/recovery.py'
+adding 'fame_scm/baselines/status.py'
+adding 'fame_scm/competence/__init__.py'
+adding 'fame_scm/competence/calibration.py'
+adding 'fame_scm/competence/insertion.py'
+adding 'fame_scm/competence/scaling.py'
+adding 'fame_scm/competence/torch_models.py'
+adding 'fame_scm/competence/torch_objectives.py'
+adding 'fame_scm/competence/trainers.py'
+adding 'fame_scm/datasets/__init__.py'
+adding 'fame_scm/datasets/data.py'
+adding 'fame_scm/datasets/loader.py'
+adding 'fame_scm/datasets/retail.py'
+adding 'fame_scm/datasets/snbc.py'
+adding 'fame_scm/datasets/temporal.py'
+adding 'fame_scm/datasets/wide.py'
+adding 'fame_scm/evaluation/__init__.py'
+adding 'fame_scm/evaluation/audit.py'
+adding 'fame_scm/evaluation/costs.py'
+adding 'fame_scm/evaluation/inventory.py'
+adding 'fame_scm/evaluation/metrics.py'
+adding 'fame_scm/evaluation/resources.py'
+adding 'fame_scm/evaluation/statistics.py'
+adding 'fame_scm/evaluation/tables.py'
+adding 'fame_scm/evaluation/theory.py'
+adding 'fame_scm/experts/__init__.py'
+adding 'fame_scm/experts/extended_experts.py'
+adding 'fame_scm/experts/forecast_experts.py'
+adding 'fame_scm/experts/pools.py'
+adding 'fame_scm/experts/registry.py'
+adding 'fame_scm/fingerprints/__init__.py'
+adding 'fame_scm/fingerprints/features.py'
+adding 'fame_scm/orchestration/__init__.py'
+adding 'fame_scm/orchestration/calibration.py'
+adding 'fame_scm/orchestration/consumers.py'
+adding 'fame_scm/orchestration/execution.py'
+adding 'fame_scm/orchestration/experiment.py'
+adding 'fame_scm/orchestration/screening.py'
+adding 'fame_scm/orchestration/smoke.py'
+adding 'fame_scm/orchestration/suite.py'
+adding 'fame_scm/orchestration/timed.py'
+adding 'fame_scm/orchestration/transfer.py'
+adding 'fame_scm/routing/__init__.py'
+adding 'fame_scm/routing/consumers.py'
+adding 'fame_scm/routing/gate.py'
+adding 'fame_scm/routing/inference.py'
+adding 'fame_scm/routing/teacher.py'
+adding 'fame_scm/routing/training.py'
+adding 'fame_scm/vendor/__init__.py'
+adding 'fame_scm/vendor/tslib/LICENSE'
+adding 'fame_scm/vendor/tslib/__init__.py'
+adding 'fame_scm/vendor/tslib/layers/Autoformer_EncDec.py'
+adding 'fame_scm/vendor/tslib/layers/Conv_Blocks.py'
+adding 'fame_scm/vendor/tslib/layers/Embed.py'
+adding 'fame_scm/vendor/tslib/layers/StandardNorm.py'
+adding 'fame_scm/vendor/tslib/layers/__init__.py'
+adding 'fame_scm/vendor/tslib/models/DLinear.py'
+adding 'fame_scm/vendor/tslib/models/TimeMixer.py'
+adding 'fame_scm/vendor/tslib/models/TimesNet.py'
+adding 'fame_scm/vendor/tslib/models/__init__.py'
+adding 'fame_scm-2.2.0.dist-info/licenses/LICENSE'
+adding 'fame_scm-2.2.0.dist-info/licenses/THIRD_PARTY.md'
+adding 'fame_scm-2.2.0.dist-info/METADATA'
+adding 'fame_scm-2.2.0.dist-info/WHEEL'
+adding 'fame_scm-2.2.0.dist-info/entry_points.txt'
+adding 'fame_scm-2.2.0.dist-info/top_level.txt'
+adding 'fame_scm-2.2.0.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Successfully built fame_scm-2.2.0.tar.gz and fame_scm-2.2.0-py3-none-any.whl
